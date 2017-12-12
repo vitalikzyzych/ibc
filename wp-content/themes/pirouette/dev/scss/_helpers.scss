@@ -1,0 +1,162 @@
+@mixin pseudo-block( $place, $type, $opacity: 1, $top: false, $right: false, $bottom: false, $left: false ){
+	&::#{$place}{
+		content: '';
+		display: block;
+		position: absolute;
+		opacity: $opacity;
+		transition: opacity 100ms ease-in;
+
+
+		@if $type == 'bg'{
+			background-color: currentcolor;
+		}
+		@if $type == 'border'{
+			border: 1px solid currentcolor;
+		}
+		@if $type == 'top'{
+			border-top: 1px solid currentcolor;
+		}
+		@if $type == 'right'{
+			border-right: 1px solid currentcolor;
+		}
+		@if $type == 'bottom'{
+			border-bottom: 1px solid currentcolor;
+		}
+		@if $type == 'left'{
+			border-left: 1px solid currentcolor;
+		}
+    @if $top{
+			top: $top;
+		}
+		@if $right{
+			right: $right;
+		}
+		@if $bottom{
+			bottom: $bottom;
+		}
+		@if $left{
+			left: $left;
+		}
+	}
+}
+@mixin themify-icon( $place, $type, $position: relative, $top: false, $right: false, $bottom: false, $left: false ){
+	&::#{$place}{
+		content: $type;
+    position: $position;
+    font-family: 'themify';
+		display: inline-block;
+		transition: opacity 100ms ease-in;
+
+
+		@if $type == 'bg'{
+			background-color: currentcolor;
+		}
+		@if $type == 'border'{
+			border: 1px solid currentcolor;
+		}
+		@if $type == 'top'{
+			border-top: 1px solid currentcolor;
+		}
+		@if $type == 'right'{
+			border-right: 1px solid currentcolor;
+		}
+		@if $type == 'bottom'{
+			border-bottom: 1px solid currentcolor;
+		}
+		@if $type == 'left'{
+			border-left: 1px solid currentcolor;
+		}
+		@if $top{
+			top: $top;
+		}
+		@if $right{
+			right: $right;
+		}
+		@if $bottom{
+			bottom: $bottom;
+		}
+		@if $left{
+			left: $left;
+		}
+	}
+}
+
+@mixin reset-spacing(){
+	margin: 0;
+	padding: 0;
+}
+
+
+@function opposite-direction($directions) {
+  $opposite-directions: ();
+  $direction-map: (
+    'top':    'bottom',
+    'right':  'left',
+    'bottom': 'top',
+    'left':   'right',
+    'center': 'center',
+    'ltr':    'rtl',
+    'rtl':    'ltr'
+  );
+
+  @each $direction in $directions {
+    $direction: to-lower-case($direction);
+
+    @if map-has-key($direction-map, $direction) {
+      $opposite-directions: append($opposite-directions, unquote(map-get($direction-map, $direction)));
+    } @else {
+      @warn "No opposite direction can be found for `#{$direction}`. Direction omitted.";
+    }
+  }
+
+  @return $opposite-directions;
+}
+
+@mixin triangle($direction, $color: currentcolor, $size: 1em) {
+  @if not index(top right bottom left, $direction) {
+    @error "Direction must be either `top`, `right`, `bottom` or `left`.";
+  }
+
+  width: 0;
+  height: 0;
+  content: '';
+  z-index: 2;
+  border-#{opposite-position($direction)}: ($size * 1.5) solid $color;
+
+  $perpendicular-borders: $size solid transparent;
+
+  @if $direction == top or $direction == bottom {
+    border-left:   $perpendicular-borders;
+    border-right:  $perpendicular-borders;
+  } @else if $direction == right or $direction == left {
+    border-bottom: $perpendicular-borders;
+    border-top:    $perpendicular-borders;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+}

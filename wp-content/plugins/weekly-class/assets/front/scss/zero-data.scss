@@ -1,0 +1,19 @@
+.wcs-timetable__zero-data{
+	display: block;
+	position: relative;
+	padding: 10vh 5vh;
+	text-align: center;
+	width: 100%;
+	
+	@include pseudo-block( 'before', 'bg', 0.125, 0,0,0,0 );
+	
+	> h3,
+	> p{
+		margin: 0 !important;
+		padding: 0 !important;
+		
+		@media (max-width: 768px) {
+			font-size: 120%;
+		}
+	}
+}

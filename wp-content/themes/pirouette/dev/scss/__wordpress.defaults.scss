@@ -1,0 +1,121 @@
+img[class*="wp-image-"],
+img[class^="wp-image-"],
+.featured-image,
+.avatar,
+.attachment-thumbnail,
+.video,
+.recent-posts time,
+.wp-caption{
+	box-sizing: border-box;
+	max-width: 100%;
+	height: auto;
+}
+.featured-image{
+	width: 100%;
+	height: auto;
+	margin: 0;
+	transition: opacity 200ms ease;
+}
+.wp-caption{
+	max-width: 100%;
+
+	&-text{
+		font-size: 85%;
+		padding: 1vh 2vh;
+		margin: 0 !important;
+		position: relative;
+		text-align: center;
+
+		&::before{
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: currentcolor;
+			opacity: 0.1;
+			border-bottom-right-radius: 2px;
+			border-bottom-left-radius: 2px;
+		}
+	}
+
+	img{
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+		margin-bottom: 0 !important;
+	}
+
+}
+.aligncenter{
+	margin: 0 auto 2vh;
+	float: none;
+}
+.alignright{
+	float: right;
+	margin: 0 0 2vh 2vh;
+}
+.alignleft{
+	float: left;
+	margin: 0 2vh 2vh 0;
+}
+.alignnone{
+	float: none;
+
+	&[class*=wp-image]{
+		margin-bottom: 2rem;
+	}
+}
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.post-password-form{
+
+	label{
+		display: block;
+		margin-bottom: 0;
+	}
+	input[name=post_password]{
+		margin-top: .5rem;
+		margin-bottom: .5rem;
+	}
+}
+
+/** Gallery */
+.gallery{
+	display: flex;
+	text-align: center;
+	flex-wrap: wrap;
+	margin: 2rem -1rem 0;
+
+	img{
+		width: 100%;
+		height: auto;
+	}
+
+	.gallery-item{
+		margin-bottom: 2rem;
+		padding: 0 1rem;
+		flex-basis: 50%;
+	}
+
+	@for $i from 1 through 10 {
+		&#{'.gallery-columns-' + $i + ' .gallery-item'}{
+			@include media-breakpoint-up(sm) {
+				flex-basis: 100% / $i;
+			}
+		}
+	}
+
+
+}
+.gallery-caption,
+.bypostauthor{
+	font-style: normal;
+}

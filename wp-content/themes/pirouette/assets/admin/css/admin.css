@@ -1,0 +1,14 @@
+.active[data-slug="slider-revolution"] + .plugin-update-tr {
+  display: none !important; }
+
+#vc_license-activation-notice,
+.vc_license-activation-notice,
+div[class*=vc_license],
+div[class*=activation-notice],
+.rs-update-notice-wrap.rs-update-notice-wrap.rs-update-notice-wrap.rs-update-notice-wrap.rs-update-notice-wrap,
+div[id*=nf-admin-notice],
+.ult_activate {
+  display: none !important; }
+
+#the-list tr[data-slug="slider-revolution"] + .plugin-update-tr, #the-list tr[data-slug="slider-revolution"] + .plugin-update-tr + .plugin-update-tr, #the-list tr[data-slug="slider-revolution"] + .plugin-update-tr + .plugin-update-tr + .plugin-update-tr {
+  display: none !important; }

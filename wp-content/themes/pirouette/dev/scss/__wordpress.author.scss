@@ -1,0 +1,44 @@
+.ct-about-author{
+	position: relative;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	width: 100%;
+
+	&::before{
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: currentcolor;
+		opacity: 0.05;
+		border-radius: 2px;
+	}
+	&__avatar{
+		flex-grow: 0;
+		flex-shrink: 0;
+		padding: 3rem 1rem 3rem 3rem;
+	}
+	&__title-meta{
+		width: 100%;
+		padding: 3rem 3rem 4rem 1rem;
+		font-size: 90%;
+		max-width: 40rem;
+	}
+
+	h4{
+		margin-top: 0;
+		margin-bottom: .5rem;
+		font-size: 130%;
+		font-weight: bold;
+	}
+
+	.avatar{
+		max-width: 8rem;
+		height: auto;
+		border-radius: 100%;
+	}
+}

@@ -1,0 +1,172 @@
+.wcs-filters{
+	margin: 0;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+
+ 	&__filter-column{
+		flex-grow: 1;
+		position: relative;
+		padding: 2vh 5px 0;
+		margin-bottom: 1.5vh;
+		flex-basis: 160px;
+/*
+		@at-root
+		.wcs-timetable--filters-left &,
+		.wcs-timetable--filters-right &{
+			width: 100%;
+		}*/
+		@at-root
+		.wcs-timetable--filters-center &,
+		.wcs-timetable--filters-left &,
+		.wcs-timetable--filters-right &{
+
+		}
+
+		&::before{
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			border-top: 1px solid currentColor;
+			opacity: 0.125;
+		}
+		&:last-of-type{
+			padding-bottom: 0;
+			border-bottom: none !important;
+		}
+	}
+	&__filter-wrapper{
+		margin: 0.5vh 0;
+		display: block;
+		font-size: 90%;
+		font-weight: normal;
+		cursor: pointer;
+
+		.wcs-filter{
+			margin-top: 0;
+			margin-right: 7px;
+		}
+
+		&--padded{
+			padding-left: 22px;
+
+			&:first-of-type{
+				padding-left: 0;
+			}
+		}
+	}
+	&.disabled{
+		div{
+			opacity: 0.5;
+		}
+	}
+	&__title{
+		font-size: 90%;
+		font-weight: bold;
+		display: block;
+		padding: 0;
+		margin: 0 0 1vh;
+	}
+	&--inline{
+
+		.wcs-filter{
+			display: none;
+		}
+		.wcs-filters__filter-wrapper{
+			display: inline-block;
+			margin-right: 1vh;
+		}
+		.wcs-filters{
+
+			&__filter-column{
+				padding-left: 0;
+				padding-right: 0;
+				flex-basis: auto;
+			}
+			&__title{
+				display: inline-block;
+				margin: 0 1vh 0 0;
+			}
+
+		}
+
+	}
+
+	.wcs-filter:checked + span{
+		position: relative;
+		display: inline-block;
+	}
+}
+
+.wcs-filter-toggler{
+	display: inline-block;
+	padding: 0 5px;
+	line-height: 2.4;
+	cursor: pointer;
+	font-weight: bold;
+
+	&-container{
+		text-align: right;
+		display: none;
+		flex-basis: 100%;
+
+		@at-root .wcs-timetable--filters-with-toggle &{
+			display: block;
+		}
+
+	}
+
+	em{
+		display: inline-block;
+		margin-left: 5px;
+	}
+}
+.wcs-filters--switches{
+
+	.wcs-switcher__switch{
+		background: currentColor;
+		border-radius: 48px;
+		display: inline-block;
+		width: 22px;
+		position: relative;
+		height: 13px;
+		cursor: pointer;
+		transition: background .2s ease-in-out !important;
+		margin-right: 10px;
+		float: left;
+		margin-top: 3px;
+		box-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+	}
+	.wcs-filter{
+		display: none;
+	}
+	.wcs-filter + .wcs-switcher__switch .wcs-switcher__handler{
+		border-radius: 50%;
+		width: 11px;
+		height: 11px;
+		background: #fff;
+		position: absolute;
+		top: 1px;
+		left: 1px;
+	}
+	.wcs-filter:checked + .wcs-switcher__switch .wcs-switcher__handler{
+		right: 1px;
+		left: auto;
+	}
+}
+.wcs-timetable--filters-center{
+
+	.wcs-filters--inline{
+		flex-direction: column;
+	}
+
+	.wcs-filters__container{
+		padding-bottom: 2em;
+	}
+
+}

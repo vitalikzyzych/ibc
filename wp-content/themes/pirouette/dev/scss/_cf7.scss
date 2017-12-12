@@ -1,0 +1,40 @@
+.field-borders-bottom-only{
+  border-top-style: none;
+  border-right-style: none;
+}
+
+.wpcf7-form{
+
+  input[type='text'],
+  input[type='email'],
+  textarea{
+    @extend .field-borders-bottom-only;
+    padding-top: .25rem;
+  }
+
+  label{
+    font-size: .75rem;
+    text-transform: uppercase;
+    opacity: .5;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  p{
+    margin-bottom: 2rem;
+  }
+
+  input.wpcf7-submit{
+    @extend .btn;
+    @extend .btn-lg;
+    font-size: .6875rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &-control-wrap{
+    display: block;
+    margin-top: .5rem;
+  }
+
+}

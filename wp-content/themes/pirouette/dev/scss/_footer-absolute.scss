@@ -1,0 +1,36 @@
+#absolute-footer{
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+  font-size: .75rem;
+  line-height: 1.9;
+
+  @include media-breakpoint-up(sm) {
+    padding-bottom: 10rem;
+  }
+
+  .sidebar-widget{
+    position: relative;
+
+    @include media-breakpoint-up(sm) {
+
+      @include pseudo-block( 'before', 'right', 0.125, -0.5rem, false, false, -0.3125rem );
+
+      &:not(:first-of-type):not(.no-separator)::before{
+        height: 3.625rem;
+
+      }
+
+    }
+
+    .widget-title{
+      font-size: 1.2em;
+    }
+
+  }
+
+  p{
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+}

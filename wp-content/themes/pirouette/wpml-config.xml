@@ -1,0 +1,7 @@
+<wpml-config>
+  <admin-texts>
+    <key name="theme_mods_pirouette">
+      <key name="sharing" />
+    </key>
+  </admin-texts>
+</wpml-config>

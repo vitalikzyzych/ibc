@@ -1,0 +1,122 @@
+.scrollable-section{
+  width: 100%;
+}
+.bullets-container{
+  display: none;
+  position: fixed;
+  bottom: 3rem;
+  right: .9375rem;
+  z-index: 999;
+  transition: color,opacity 200ms ease;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+
+  @include media-breakpoint-up(sm) {
+    right: 3rem;
+  }
+
+  .section-bullets{
+    list-style: none;
+    line-height: 1;
+    @include  reset-spacing();
+
+    &.is_hidden{
+      opacity: 0;
+
+      *{
+        opacity: 0;
+      }
+    }
+  }
+
+  li{
+    color: inherit
+  }
+
+  a{
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+    color: inherit;
+    transition: color,opacity 200ms ease;
+    border-radius: 100px;
+    border: 1px solid transparent;
+
+    &::before{
+      content: '';
+      display: block;
+      width: .5rem;
+      height: .5rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border:1px solid currentColor;
+      border-radius: 100px;
+      transition: color,opacity 200ms ease;
+    }
+
+    &:hover{
+      color: inherit;
+
+      &::before{
+        background-color: currentColor;
+      }
+    }
+  }
+
+  .active{
+
+    a{
+      border:1px solid currentColor;
+
+      &::before{
+        background-color: currentColor;
+      }
+
+    }
+
+  }
+
+  .section-title{
+    transform: rotate(270deg);
+    transform-origin: left top 0;
+    display: inline-block;
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.1;
+    transition: color,opacity 200ms ease;
+    position: absolute;
+    left: 0.2rem;
+
+    > div {
+      padding-left: 12rem;
+      position: relative;
+      left: 1rem;
+      color: inherit !important;
+
+      @include pseudo-block( 'before', 'top', 0.5, 0.5rem, false, false, 0 );
+
+      &::before{
+        width: 10rem;
+      }
+
+      > span {
+        display: block;
+        text-decoration: none;
+        white-space: nowrap;
+        color: inherit !important;
+
+      }
+
+    }
+
+    &.is_hidden{
+      opacity: 0;
+    }
+
+  }
+}

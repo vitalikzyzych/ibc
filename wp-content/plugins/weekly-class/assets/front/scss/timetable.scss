@@ -1,0 +1,298 @@
+@import 'defaults';
+@import '../../libs/patternbolt/patternbolt.scss';
+@import '../../libs/owlcarousel/css/owl.carousel.min.css';
+@import '../../libs/owlcarousel/css/owl.theme.default.min.css';
+@import '../../libs/ladda/css/ladda-themeless.min.css';
+@import '../../libs/themify/themify-icons.css';
+@mixin n-columns($items, $item, $min-width, $gutter, $last-equal: false, $max-cols: 5) {
+  #{$items} {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$gutter;
+    margin-top: -$gutter;
+
+    #{$item} {
+      flex: 1 0 $min-width;
+      margin-left: $gutter;
+      margin-top: $gutter;
+
+      @if $last-equal {
+        @for $i from 2 through $max-cols {
+          $screen-width: ($min-width*$i)+($gutter*$i);
+          $column-width: (100%/$i);
+          @media (min-width: $screen-width) {
+            max-width: calc(#{$column-width} - #{$gutter});
+          }
+        }
+
+        $column-width: (100%/$max-cols);
+        @media (min-width: $min-width*$max-cols) {
+            min-width: calc(#{$column-width} - #{$gutter});
+        }
+      }
+    }
+  }
+}
+@mixin pseudo-block( $place, $type, $opacity: 1, $top: false, $right: false, $bottom: false, $left: false ){
+	&::#{$place}{
+		content: '';
+		display: block;
+		position: absolute;
+		opacity: $opacity;
+		transition: opacity 100ms ease-in;
+
+
+		@if $type == 'bg'{
+			background-color: currentcolor;
+		}
+		@if $type == 'border'{
+			border: 1px solid currentcolor;
+		}
+		@if $type == 'top'{
+			border-top: 1px solid currentcolor;
+		}
+		@if $type == 'right'{
+			border-right: 1px solid currentcolor;
+		}
+		@if $type == 'bottom'{
+			border-bottom: 1px solid currentcolor;
+		}
+		@if $type == 'left'{
+			border-left: 1px solid currentcolor;
+		}
+		@if $top{
+			top: 0;
+		}
+		@if $right{
+			right: 0;
+		}
+		@if $bottom{
+			bottom: 0;
+		}
+		@if $left{
+			left: 0;
+		}
+	}
+}
+@mixin reset-spacing(){
+	margin: 0;
+	padding: 0;
+}
+//@include n-columns('.wcs-timetable-container', '.wcs-col', 200px,  30px, true, 2);
+
+.wcs-timetable__container{
+	position: relative;
+	min-height: 12.5vh;
+	clear: both;
+	width: 100%;
+	padding: 5vh 0;
+  display: flex;
+  flex-wrap: wrap;
+
+	&::after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	*{
+		box-sizing: border-box;
+	}
+
+  .wcs-filters__container{
+     flex-basis: 100%;
+     flex-grow: 1;
+  }
+  .wcs-timetable{
+    flex-basis: 100%;
+  }
+
+  @media (min-width: 992px){
+    &.wcs-timetable--with-filters:not(.wcs-timetable--filters-center){
+      .wcs-filters__container{
+        flex-basis: 210px;
+        flex-grow: 0;
+
+        .wcs-filters__filter-column{
+          &:first-child{
+            padding-top: 0;
+
+            &::before{
+              display: none;
+            }
+          }
+        }
+      }
+      .wcs-timetable{
+        flex-basis: 40%;
+        flex-grow: 1;
+      }
+    }
+    &.wcs-timetable--with-filters.wcs-timetable--filters-center.wcs-timetable--filters-without-toggle{
+      .wcs-filters__filter-column{
+        padding-top: 0;
+
+        &::before{
+          display: none;
+        }
+      }
+    }
+    &.wcs-timetable--with-filters.wcs-timetable--filters-right{
+			.wcs-filters__container{
+				margin-left: 30px;
+				order: 2;
+			}
+		}
+		&.wcs-timetable--with-filters.wcs-timetable--filters-left{
+			.wcs-filters__container{
+				margin-right: 30px;
+				order: 0;
+			}
+		}
+		&.wcs-timetable--with-filters.wcs-timetable--filters-center{
+			.wcs-timetable{
+				margin-top: 1vh;
+			}
+		}
+  }
+
+	table, thead, tbody, tr, td, th{
+		border: none !important;
+	}
+	.wcs-mobile{
+		display: none;
+	}
+	.wcs-content{
+		display: none;
+	}
+	h2{
+		margin: 0 0 1vh;
+		padding: 1vh 0;
+		text-align: left;
+	}
+	h3{
+		font-size: 160%;
+		line-height: 1.25;
+	}
+	a:not(.wcs-btn){
+		color: inherit;
+
+		&:hover{
+			color: inherit;
+			opacity: 0.75;
+		}
+	}
+	.wcs-class__title:not(td){
+		@include reset-spacing();
+	}
+}
+
+
+.wcs-timetable{
+	text-align: center;
+	position: relative;
+	width: 100%;
+
+	&.disabled{
+		opacity: 0.5;
+	}
+	&--class-title{
+		margin: 0;
+		padding: 0;
+		font-size: 140%;
+		line-height: 1.4;
+		color: inherit;
+	}
+
+}
+.wcs-class{
+	&__non-breakable{
+		display: inline-block;
+		white-space: nowrap;
+	}
+	&__title{
+		word-break: break-word;
+	}
+}
+
+@import 'filters';
+@import 'display-list';
+@import 'display-compact';
+@import 'display-large';
+@import 'display-weekly';
+@import 'display-tabs';
+@import 'display-agenda';
+@import 'display-carousel';
+@import 'display-grid';
+@import 'display-timeline';
+@import 'display-calendar';
+@import 'display-countdown';
+@import 'display-cover';
+@import 'display-monthly-calendar';
+@import 'zero-data';
+@import 'buttons';
+@import 'modal';
+@import 'addons';
+@import 'single';
+
+.wcs-table{
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  flex-direction: column;
+
+  &-tr{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: stretch;
+    //flex-basis: 4.5em;
+  }
+  &-thead{
+    flex-basis: 4em;
+  }
+  &-tr--full{
+    display: table-row;
+    width: 100%;
+  }
+  &-td{
+    flex-grow: 1;
+    flex-basis: 4em;
+    min-width: 2em;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 2vh 0;
+
+    @media (min-width: 992px) {
+
+    }
+    @media (min-width: 1200px) {
+
+    }
+    @media (min-width: 1600px) {
+
+
+
+    }
+
+    &--full{
+      width: 100%;
+    }
+  }
+}
+
+.wcs-woo-description{
+	opacity: 0.75;
+	display: inline-block;
+}
+
+.wcs-modal-call{
+  cursor: pointer;
+}
+.wcs-vue[v-cloak]{
+  visibility: hidden;
+}

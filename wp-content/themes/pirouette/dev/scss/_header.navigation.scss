@@ -1,0 +1,235 @@
+#ct-main-nav{
+
+  @include media-breakpoint-up(sm) {
+    padding-top: 0;
+    text-align: right;
+    flex-grow: 1;
+  }
+
+  &__wrapper{
+    position: relative;
+    width: 100%;
+    text-align: left;
+
+    @include media-breakpoint-up(xl) {
+      width: auto;
+      font-size: 0.75rem;
+      text-align: right;
+    }
+
+  }
+}
+
+.ct-main-navigation{
+
+   @at-root
+   ul#{&},
+   div#{&} > ul{
+     display: none;
+     list-style: none;
+     width: 100%;
+     position: relative;
+     flex-direction: column;
+     transition: all 200ms ease;
+     margin: 0 auto;
+     padding: 0;
+
+     @include media-breakpoint-up(xl) {
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row;
+       width: auto;
+       position: relative;
+       @include reset-spacing();
+
+       .ct-menu--align-left &{
+         justify-content: flex-start;
+       }
+
+       .ct-menu--align-right &{
+         justify-content: flex-end;
+       }
+
+     }
+
+     > li{
+       &:not(:first-child){
+         position: relative;
+         @include pseudo-block( 'after', 'top', 0.125, 0, 0, false, 0 );
+       }
+
+       @include media-breakpoint-up(xl) {
+         &:not(:first-child)::after{
+           display: none;
+         }
+       }
+
+       @include media-breakpoint-up(xl) {
+         margin-left: 4rem;
+         white-space: nowrap;
+       }
+
+     }
+  }
+
+  .menu-item,
+  .page_item{
+    position: relative;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+
+    @include media-breakpoint-up(xl) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &:hover {
+      > .sub-menu,
+      > .children {
+        display: block;
+      }
+    }
+
+  }
+
+  .menu-item .menu-item,
+  .page_item .page_item{
+    padding: .25rem 0.125rem;
+    line-height: 1.6;
+
+    &:not(:first-child) {
+      @include pseudo-block( 'after', 'top', 0.125, 0, 0, false, 0 );
+    }
+
+    @include media-breakpoint-up(xl) {
+      padding: 0 1.5rem;
+
+      &:not(:first-child)::after{
+        left: 1.5rem;
+        right: 1.5rem;
+      }
+    }
+
+  }
+
+  .sub-menu,
+  .children{
+    list-style: none;
+    position: relative;
+    transition: all 200ms ease;
+    display: none;
+    @include reset-spacing();
+
+    &:not(:first-child){
+      @include pseudo-block( 'after', 'top', 0.125, 0, 0, false, 0 );
+    }
+
+    @include media-breakpoint-up(xl) {
+      position: absolute;
+      text-align: left;
+      width: 11.75rem;
+      left: -1.5rem;
+      padding: .5rem 0;
+      background: #fff;
+      box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      border-radius: 5px;
+      top: 100%;
+      margin-bottom: -2px;
+
+      &::after,
+      &:not(:first-child)::after{
+        display: none;
+      }
+    }
+
+    a{
+      font-size: 80%;
+    }
+  }
+
+  .sub-menu .sub-menu,
+  .children .children{
+
+    @include media-breakpoint-up(xl) {
+      left: 95%;
+      top: -0.5rem;
+    }
+  }
+
+  .current-menu-ancestor,
+  .current-menu-parent,
+  .current-menu-item,
+  .current-page-parent,
+  .current_page_parent,
+  .current_page_ancestor,
+  .current_page_item{
+
+  }
+
+
+  .menu-item-has-children > a,
+  .page_item_has_children > a{
+    @include themify-icon( 'before', "\e64b" );
+
+    &::before{
+      float: right;
+      margin: 0 0.5rem;
+      display: inline-block;
+
+      @media(min-width: 48em){
+        font-size: 0.5rem;
+        line-height: 2.25;
+        margin-right: 0
+      }
+    }
+  }
+
+  .menu-item .menu-item-has-children > a,
+  .page_item .page_item_has_children > a{
+    @include media-breakpoint-up(xl) {
+      &::before{
+        content: '\e649';
+        line-height: 2.2;
+      }
+    }
+  }
+
+  a{
+    text-decoration: none;
+    transition: all 200ms ease;
+    white-space: pre-wrap;
+    display: block;
+    padding: 0.5rem 0;
+  }
+
+}
+
+
+#ct-main-nav__toggle-navigation{
+  position: relative;
+  font-size: .8em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  float: right;
+  margin: .5rem 0 0;
+
+  @include media-breakpoint-up(xl) {
+    display: none;
+  }
+
+  .ti-align-justify{
+    margin-left: .5rem;
+    font-size: 1.5em;
+
+    &::before{
+      position: relative;
+      top: .125rem;
+    }
+  }
+}
+#ct-main-nav__toggle-navigation-main:checked + #ct-main-nav__wrapper > ul.ct-main-navigation,
+#ct-main-nav__toggle-navigation-main:checked + #ct-main-nav__wrapper > div.ct-main-navigation > ul{
+  display: flex;
+  padding-top: 2rem;
+}

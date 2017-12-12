@@ -1,0 +1,133 @@
+@mixin content-padding( $size ) {
+  padding-top: $size;
+  padding-bottom: $size;
+}
+
+@mixin side-padding( $size ) {
+  padding-left: $size / 2;
+  padding-right: $size / 2;
+
+  @include media-breakpoint-up(sm) {
+    padding-left: $size;
+    padding-right: $size;
+  }
+
+}
+
+$spacing-content-padding: 4rem;
+$spacing-content-padding-lg: $spacing-content-padding * 1.5;
+$spacing-content-padding-xl: $spacing-content-padding * 2;
+$spacing-content-padding-xxl: $spacing-content-padding * 2.5;
+
+.content-padding{
+  @include content-padding( $spacing-content-padding * 0.5 );
+
+  @include media-breakpoint-up(sm) {
+    @include content-padding( $spacing-content-padding * 0.66 );
+  }
+
+  @include media-breakpoint-up(md) {
+    @include content-padding( $spacing-content-padding * 0.75 );
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include content-padding( $spacing-content-padding );
+  }
+
+  &-none{
+    @include content-padding( 0 );
+  }
+
+  &-xs{
+    @include content-padding( 2rem );
+  }
+
+  &-lg{
+    @include content-padding( 3rem );
+
+    @include media-breakpoint-up(sm) {
+      @include content-padding( $spacing-content-padding-lg * 0.66 );
+    }
+
+    @include media-breakpoint-up(md) {
+      @include content-padding( $spacing-content-padding-lg * 0.75 );
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include content-padding( $spacing-content-padding-lg );
+    }
+  }
+
+  &-xl{
+    @include content-padding( 3rem );
+
+    @include media-breakpoint-up(sm) {
+      @include content-padding( $spacing-content-padding-xl * 0.66 );
+    }
+
+    @include media-breakpoint-up(md) {
+      @include content-padding( $spacing-content-padding-xl * 0.75 );
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include content-padding( $spacing-content-padding-xl );
+    }
+  }
+
+  &-xxl{
+    @include content-padding( 3rem );
+
+    @include media-breakpoint-up(sm) {
+      @include content-padding( $spacing-content-padding-xxl * 0.66 );
+    }
+
+    @include media-breakpoint-up(md) {
+      @include content-padding( $spacing-content-padding-xxl * 0.75 );
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include content-padding( $spacing-content-padding-xxl );
+    }
+
+  }
+
+  &-side-sm,
+  &-side-sm.vc_column_container{
+    @include side-padding(1rem);
+  }
+
+  &-side,
+  &-side.vc_column_container{
+    @include side-padding(2rem);
+  }
+
+  &-side-lg,
+  &-side-lg.vc_column_container{
+    @include side-padding(3rem);
+  }
+
+  &-side-xl,
+  &-side-xl.vc_column_container{
+    @include side-padding(4rem);
+  }
+
+  &-side-xxl,
+  &-side-xxl.vc_column_container{
+    @include side-padding(5rem);
+  }
+
+  &-side-xxxl,
+  &-side-xxl.vc_column_container{
+    @include side-padding(6rem);
+  }
+
+}
+
+.ct-content-without-vc .ct-content{
+  @include content-padding( 2rem );
+
+  @include media-breakpoint-up(sm) {
+    @include content-padding( 4rem );
+  }
+
+}

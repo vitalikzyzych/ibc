@@ -1,0 +1,194 @@
+.modal {
+	.ninja-forms-required-items,
+	.ninja-forms-form-title{
+		display: none;
+	}
+	&[id*='prefill-modal']{
+		.modal-body{
+			padding-top: 0
+		}
+	}
+
+}
+div#ui-datepicker-div{
+	z-index: 1151 !important;
+	border-radius:2px;
+	box-shadow:0 5px 10px rgba(0,0,0,.2);
+	padding: 1.4rem;
+	min-width: 25rem;
+	display: none;
+	text-align: center;
+
+	.ui-datepicker-calendar{
+		width: 100%
+	}
+	.ui-datepicker-current-day{
+		border-radius: 2px;
+
+		.ui-state-active{
+			color: inherit;
+		}
+	}
+	.ui-datepicker-other-month{
+		opacity: 0.45
+	}
+	td{
+		border-radius: 2px
+	}
+	.ui-datepicker-title{
+		font-size: 90%;
+		margin-bottom: 10px;
+
+		span{
+			font-weight: bold;
+		}
+	}
+	.ui-datepicker-header{
+		.ui-datepicker-next{
+			float: right;
+
+			&::before{
+				content: '\f178';
+				font-family: 'FontAwesome';
+				display: inline-block;
+			}
+			span{ display: none }
+		}
+		.ui-datepicker-prev{
+			float: left;
+
+			&::before{
+				content: '\f177';
+				font-family: 'FontAwesome';
+				display: inline-block;
+			}
+			span{ display: none }
+		}
+	}
+	thead{
+		td, th, th span, td span{
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+	tbody{
+		td{
+			font-size: 90%;
+		}
+	}
+}
+.form-control[data-provide=date-picker],
+.ninja-forms-datepicker{
+	background-position: center right;
+	background-repeat: no-repeat;
+	background-size: 27px;
+	padding-right: 35px;
+}
+.ninja-forms-response-msg{
+	margin: 0 0 1.4rem;
+
+	&.ninja-forms-error-msg p,
+	&.ninja-forms-error-msg div{
+		font-weight: bold;
+	}
+}
+.ninja-forms-field-error,
+.ninja-forms-field-error p{
+	padding-top: 0.5rem;
+	font-weight: normal;
+}
+
+.ninja-forms-form{
+	.ninja-forms-all-fields-wrap{
+		margin: 0 -15px;
+
+		& > *{
+			display: block;
+			float: left;
+			width: 100%;
+			padding: 0 15px;
+		}
+		.col-1-wrap{
+			width: 100%;
+		}
+		.col-2-wrap{
+			width: 50%;
+		}
+		.col-3-wrap{
+			width: 33.33333%;
+		}
+		.col-4-wrap{
+			width: 25%;
+		}
+		.col-5-wrap{
+			width: 66.66666%;
+		}
+		.col-6-wrap{
+			width: 50%;
+		}
+		.col-7-wrap{
+			width: 75%;
+		}
+		.textarea-wrap textarea{
+			height: 120px;
+		}
+		.field-wrap,
+		#ninja_forms_required_items{
+			margin: 1.4rem 0 !important
+		}
+		.field-wrap{
+			input[type=text],
+			select,
+			textarea{
+				width: 100%;
+			}
+			&.calc-wrap{
+
+				input{
+					text-align: right;
+					font-weight: bold;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+.slider-container .booking-row{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+@media (max-width:991px) {
+	.booking-form{
+		div[class*=col-]{
+			margin-bottom: 1.4rem;
+
+			&:last-of-type{
+				margin-bottom: 0
+			}
+		}
+	}
+}
+@media (max-width:767px) {
+	.ninja-forms-form{
+		.ninja-forms-all-fields-wrap{
+			div[class*=col-]{
+				width: 100%;
+				float: none;
+			}
+			.field-wrap,
+			#ninja_forms_required_items{
+				margin-bottom: 1.4rem
+			}
+		}
+	}
+	.booking-form{
+		div[class*=col-]{
+			margin-bottom: 1.4rem;
+
+			&:last-of-type{
+				margin-bottom: 0
+			}
+		}
+	}
+}

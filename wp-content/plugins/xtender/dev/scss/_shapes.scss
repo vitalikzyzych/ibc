@@ -1,0 +1,31 @@
+.xtd-shape{
+  display: inline-block;
+  width: 100%;
+  position: relative;
+
+  &--position-absolute{
+    position: absolute;
+  }
+
+  &--shape-round{
+    border-radius: 4000px;
+  }
+
+  &--z-index{
+    &--1{
+      z-index: -1;
+    }
+    &-0{
+      z-index: 0;
+    }
+    &-1{
+      z-index: 1;
+    }
+    &-2{
+      z-index: 2;
+    }
+    &-3{
+      z-index: 3;
+    }
+  }
+}

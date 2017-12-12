@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'xtd_dental_icons';
+  src: url('../fonts/xtd_dental_icons.eot?89985525');
+  src: url('../fonts/xtd_dental_icons.eot?89985525#iefix') format('embedded-opentype'),
+       url('../fonts/xtd_dental_icons.woff2?89985525') format('woff2'),
+       url('../fonts/xtd_dental_icons.woff?89985525') format('woff'),
+       url('../fonts/xtd_dental_icons.ttf?89985525') format('truetype'),
+       url('../fonts/xtd_dental_icons.svg?89985525#xtd_dental_icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'xtd_dental_icons';
+    src: url('../font/xtd_dental_icons.svg?89985525#xtd_dental_icons') format('svg');
+  }
+}
+*/
+
+ [class^="dental-icon-"]:before, [class*=" dental-icon-"]:before {
+  font-family: "xtd_dental_icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.dental-icon-asset-5:before { content: '\e802'; } /* '' */
+.dental-icon-asset-1:before { content: '\e803'; } /* '' */
+.dental-icon-asset-3:before { content: '\e804'; } /* '' */
+.dental-icon-asset-6:before { content: '\e805'; } /* '' */
+.dental-icon-asset-7:before { content: '\e806'; } /* '' */
+.dental-icon-asset-8:before { content: '\e807'; } /* '' */
+.dental-icon-asset-9:before { content: '\e808'; } /* '' */
+.dental-icon-asset-11:before { content: '\e809'; } /* '' */
+.dental-icon-asset-10:before { content: '\e80a'; } /* '' */
+.dental-icon-asset-12:before { content: '\e80b'; } /* '' */
+.dental-icon-asset-13:before { content: '\e80c'; } /* '' */
+.dental-icon-asset-14:before { content: '\e80d'; } /* '' */
+.dental-icon-asset-15:before { content: '\e80e'; } /* '' */
+.dental-icon-asset-16:before { content: '\e80f'; } /* '' */
+.dental-icon-asset-17:before { content: '\e810'; } /* '' */
+.dental-icon-asset-18:before { content: '\e811'; } /* '' */
+.dental-icon-asset-19:before { content: '\e812'; } /* '' */
+.dental-icon-asset-20:before { content: '\e813'; } /* '' */
+.dental-icon-asset-27:before { content: '\e814'; } /* '' */
+.dental-icon-asset-25:before { content: '\e815'; } /* '' */
+.dental-icon-asset-26:before { content: '\e816'; } /* '' */

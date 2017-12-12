@@ -1,0 +1,130 @@
+.ct-header__toolbar{
+  font-size: 0.5625rem;
+  text-align: right;
+}
+.ct-header{
+  width: 100%;
+  flex-grow: 0;
+  padding: 2.5rem 0 3.625rem;
+  position: relative;
+  z-index: 3;
+
+  @include pseudo-block( 'after', 'top', 0.15, false, 0, 0, 0 );
+
+  &__logo-nav{
+
+  @include media-breakpoint-up(xl) {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  &__wrapper{
+
+    @include media-breakpoint-up(sm) {
+      &--stuck{
+        position: fixed;
+        z-index: 999;
+        padding: 0;
+        top:0;
+        left: 0;
+        right: 0;
+        box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0);
+
+        .ct-header__toolbar{
+          display: none;
+        }
+        .admin-bar &{
+          top: 2rem;
+        }
+        #ct-main-nav{
+          padding-top: 0;
+        }
+        #ct-logo img{
+          transform: scale(0.9);
+          transform-origin: center left;
+        }
+
+        &::after{
+          opacity: 0;
+        }
+      }
+      &--shadow{
+        box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+}
+.ct-header__logo-nav{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@import '_header.navigation';
+
+#ct-logo{
+    margin: 0 auto;
+    line-height: 1;
+    transition: all 200ms ease;
+    display: inline-block;
+
+    @media(min-width: 48em){
+      margin: 0;
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+    span{
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: -1px;
+    }
+    small{
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      opacity: 0.7;
+      font-size: 0.6875rem;
+      position: relative;
+
+      @media(min-width: 48em){
+        transform: translateY(-40%);
+        display: inline-block;
+        margin-left: 1.5rem;
+      }
+    }
+    &:hover{
+      text-decoration: none;
+    }
+    img{
+      transition: all 200ms ease;
+    }
+}
+
+.wpml-switcher{
+  text-transform: uppercase;
+  font-weight: bold;
+
+  span{
+    display: inline-block;
+
+    &:not(:first-child){
+      margin-left: .75rem
+    }
+  }
+
+  .active{
+    position: relative;
+    padding-right: 3rem;
+    padding-left: 0.25rem;
+    color: inherit;
+
+    @include pseudo-block( 'after', 'top', 1, 45%, 0, false, 0 );
+
+  }
+
+  a{
+    text-decoration: none;
+  }
+}

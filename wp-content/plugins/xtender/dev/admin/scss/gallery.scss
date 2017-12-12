@@ -1,0 +1,45 @@
+#gallery-clear-button{
+	display: inline-block;
+	float: right;
+	line-height: 26px;
+}
+#curly_gallery_metabox{
+	.inside{
+		padding: 0;
+	}
+	.inside-container{
+		padding: 6px 12px 12px;
+		
+		:first-child{
+			margin-top: 0;
+		}
+	}
+	.images{
+		overflow: hidden;
+		margin: 1em 0;
+		
+		img{
+			float: left;
+			margin-right:3.22555%;
+			margin-bottom:3.22555%;
+			width: 22.580837%;
+			height: auto;
+			
+			&:nth-child(4n){
+				margin-right: 0;
+			}
+			&:nth-child(-4n),
+			&:nth-child(-3n),
+			&:nth-child(-2n),
+			&:nth-child(-n){
+				margin-bottom: 0;
+			}
+		}
+	}
+	.actions{
+		padding: 10px;
+	clear: both;
+	border-top: 1px solid #ddd;
+	background: #f5f5f5;
+	}
+}

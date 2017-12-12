@@ -1,0 +1,1 @@
+<div class='wcs-map' data-wcs-map-type='<?php echo $map['type'] ?>' data-wcs-map-theme='<?php echo $map['theme'] ?>' data-wcs-map-zoom='<?php echo $map['zoom'] ?>' data-wcs-map-lat='<?php echo $map['latitude'] ?>' data-wcs-map-lon='<?php echo $map['longitude'] ?>'></div>

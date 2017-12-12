@@ -1,0 +1,110 @@
+$responsive-margins: ( top, right, bottom, left);
+
+.xtd-responsive-margin{
+  @for $i from 5 through 100{
+    @if $i % 5 == 0{
+      &--#{$i}{
+
+        @include media-breakpoint-up(md) {
+          margin: $i * 1% / 1.5;
+        }
+
+        @include media-breakpoint-up(lg) {
+          margin: $i * 1%;
+        }
+
+      }
+    }
+  }
+  @each $direction in $responsive-margins{
+    @for $i from 5 through 100{
+      @if $i % 5 == 0{
+        &--#{$direction}-#{$i}{
+
+          @include media-breakpoint-up(md) {
+      			margin-#{$direction}: $i * 1% / 1.5;
+      		}
+
+      		@include media-breakpoint-up(lg) {
+      			margin-#{$direction}: $i * 1%;
+      		}
+
+        }
+      }
+    }
+  }
+}
+
+.xtd-padding{
+  @for $i from 1 through 10{
+    &--#{$i}:not(.vc_column_container),
+    &--#{$i} > .vc_column-inner.vc_column-inner{
+      @include media-breakpoint-up(md) {
+        padding: $i * 1rem / 1.5;
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding: $i * 1rem;
+      }
+    }
+  }
+}
+.xtd-margin{
+  @for $i from 1 through 10{
+    &--#{$i}:not(.vc_column_container),
+    &--#{$i} > .vc_column-inner.vc_column-inner{
+      @include media-breakpoint-up(md) {
+        margin: $i * 1rem / 1.5;
+      }
+
+      @include media-breakpoint-up(lg) {
+        margin: $i * 1rem;
+      }
+    }
+  }
+  @each $direction in $responsive-margins{
+    @for $i from 1 through 10{
+
+      &--#{$direction}-#{$i}{
+        @include media-breakpoint-up(md) {
+    			margin-#{$direction}: $i * 1rem / 1.5;
+    		}
+
+    		@include media-breakpoint-up(lg) {
+    			margin-#{$direction}: $i * 1rem;
+    		}
+      }
+    }
+  }
+}
+.xtd-padding{
+  @each $direction in $responsive-margins{
+    @for $i from 1 through 10{
+      &--#{$direction}-#{$i}{
+        @include media-breakpoint-up(md) {
+    			padding-#{$direction}: $i * 1rem / 1.5;
+    		}
+
+    		@include media-breakpoint-up(lg) {
+    			padding-#{$direction}: $i * 1rem;
+    		}
+      }
+    }
+  }
+}
+
+.xtd-responsive-border{
+  @each $direction in $responsive-margins{
+    @for $i from 1 through 4{
+      &--#{$direction}-#{$i}{
+        border-#{$direction}-style: solid;
+        border-#{$direction}-width: 0px;
+
+    		@include media-breakpoint-up(lg) {
+    			border-#{$direction}-width: $i * 1rem;
+    		}
+
+      }
+    }
+  }
+}

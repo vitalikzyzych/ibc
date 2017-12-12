@@ -1,0 +1,44 @@
+.person-mini{
+	padding-left: 110px;
+	position: relative;
+	min-height: 100px;
+}
+
+.person-mini img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 90px;
+	height: 90px;
+	border-radius: 300px;
+	border: 0.3em solid;
+	padding: 1px;
+}
+.person-mini strong{
+	margin-bottom: 5px;
+	display: block;
+}
+.person-large{
+	text-align: center;
+}
+.person-large img{
+	border-radius: 300px;
+	border: 0.6em solid;
+	margin-bottom: 15px;
+	max-width: 200px;
+	height: auto;
+	padding: 1px;
+}
+.person-large strong{
+	display: block;
+}
+@media (max-width:767px) {
+	.person-mini{
+		padding: 0;
+		text-align: center;
+	}
+	.person-mini img{
+		margin-bottom: 1.4rem;
+		position: static;
+	}
+}

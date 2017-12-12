@@ -1,0 +1,40 @@
+.owl-dots{
+  text-align: center;
+  margin-top: 1rem;
+}
+.owl-dot{
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  color: inherit;
+  transition: color,opacity 200ms ease;
+  border-radius: 100px;
+  border: 1px solid transparent;
+
+  &::before{
+    content: '';
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border:1px solid currentColor;
+    border-radius: 100px;
+    transition: color,opacity 200ms ease;
+  }
+
+  &:hover,
+  &.active{
+    color: inherit;
+
+    &::before{
+      background-color: currentColor;
+    }
+  }
+  &.active{
+    border-color: currentColor;
+  }
+}

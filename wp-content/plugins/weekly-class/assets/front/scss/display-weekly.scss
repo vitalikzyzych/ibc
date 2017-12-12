@@ -1,0 +1,334 @@
+.wcs-timetable__week{
+	padding: 0;
+	margin: 0;
+	text-align: left;
+
+	@media (min-width: 992px) {
+		margin: 0 -0.2vh;
+		display: flex;
+		width: 100%;
+		align-content: stretch;
+		align-items: stretch;
+		justify-content: space-between;
+	}
+
+	@media (min-width: 992px) {
+		.wcs-timetable__spacer{
+			flex-grow: 10;
+			@include pb('lines-45-b', 6px, #fff, #000, 0.3, 'mask');
+		}
+	}
+
+	.wcs-day{
+		margin: 0;
+		padding:0;
+		min-height: 15vh;
+
+		@media (min-width: 992px) {
+			display: flex;
+			align-items: stretch;
+			align-content: stretch;
+			flex-direction: column;
+			width: 100%;
+			margin: 0 0.2vh;
+		}
+
+		&:last-child{
+			.wcs-timetable--classes{
+				.wcs-timetable--class{
+					border-right: none !important;
+				}
+			}
+		}
+
+			&__title{
+			font-size: 110%;
+			position: relative;
+			padding: 1vh;
+			margin: 0 0 0.4vh 0 !important;
+
+			@media (min-width: 992px) {
+				flex-shrink: 0;
+				flex-grow: 0;
+				text-align: center;
+				padding: 1vh 0;
+			}
+
+			&::before{
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: currentcolor;
+				opacity: 0.125;
+			}
+			small{
+				font-size: 80%;
+			}
+		}
+
+		.wcs-timetable__classes{
+			padding: 0;
+			margin: 0 0 0.4vh 0;
+
+			.wcs-class{
+				padding: 10px 15px;
+				position: relative;
+				flex-shrink: 0;
+				font-size: 90%;
+				box-sizing: border-box;
+				display: flex;
+				flex-wrap: wrap;
+				align-content: stretch;
+				align-items: stretch;
+				width: 100%;
+
+				.wcs-class__title{
+					flex-grow: 3;
+				}
+				.wcs-class__time{
+					flex-grow: 1;
+					text-align: right;
+				}
+				div{
+					flex-grow: 4;
+					align-self: flex-end;
+					width: 100%;
+				}
+
+				@media (min-width: 992px) {
+					flex-direction: column;
+
+					.wcs-class__title{
+						flex-grow: 0;
+						width: 100%;
+						display: block;
+					}
+					.wcs-class__time{
+						flex-grow: 1;
+						text-align: left;
+						width: 100%;
+					}
+					div{
+						flex-grow: 0;
+						align-self: flex-end;
+					}
+				}
+
+				+ .wcs-class {
+					margin: 0.4vh 0 0;
+				}
+				> div{
+					font-size: 80%;
+					position: relative;
+					width: 100%;
+					opacity: 0.6;
+					transition: opacity 100ms ease-in;
+				}
+				&:hover > div{
+					opacity: 0.95;
+				}
+				&::before{
+					content: '';
+					display: block;
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					opacity: 0.06;
+					background-color: currentcolor;
+					transition: opacity, background-color, border 100ms ease-in;
+				}
+				&:hover::before{
+					opacity: 0.05;
+					background-color: transparent;
+					border: 0.4vh solid;
+				}
+				small{
+					text-overflow: ellipsis;
+					display: block;
+					font-size: inherit;
+					position: relative;
+					cursor: pointer;
+				}
+			}
+			.wcs-class--canceled{
+				opacity: 0.75;
+
+				@include pb('lines-45-b', 6px, #fff, #000, 0.3, 'mask');
+
+				.wcs-timetable--class-title,
+				.wcs-timetable--time,
+				> div{
+					opacity: 0.45;
+				}
+				&::before{
+					background-color: transparent;
+					border: 0.4vh solid;
+				}
+				&:hover::before{
+					background-color: transparent;
+				}
+				&:hover > div{
+					opacity: 0.45;
+				}
+			}
+		}
+
+	}
+	.wcs-class__time{
+		font-size: inherit;
+		//display: inline-block;
+		//float: right;
+	}
+	time{
+		display: block;
+		font-size: inherit;
+		opacity: 0.75;
+		margin-bottom: 1.5vh;
+
+		span{
+			font-size: inherit;
+			white-space: normal;
+			display: inline-block;
+		}
+	}
+
+
+	.wcs-class{
+
+		&--dark{
+			color: rgba(0,0,0,0.75);
+		}
+		&--light{
+			color: rgba(255,255,255,0.75);
+		}
+
+	}
+}
+
+
+.wcs-timetable--style-3{
+	&:not(.wcs-timetable--grouped-by-hours){
+		@media (min-width: 992px) {
+			@for $i from 1 through 3 {
+				#{'.wcs-class--slots-'+$i}{
+					min-height: 4.25vh;
+				}
+			}
+			@for $i from 4 through 144 {
+				#{'.wcs-class--slots-'+$i}{
+					min-height: $i * 1.25vh;
+				}
+			}
+
+		}
+	}
+	&.wcs-timetable--grouped-by-hours{
+
+		.wcs-timetable__week{
+			flex-direction: column;
+		}
+		.wcs-row{
+			display: none;
+			width: 100%;
+			align-content: stretch;
+			align-items: stretch;
+			justify-content: space-between;
+
+			@media (min-width: 992px){
+				display: flex;
+			}
+
+			.wcs-empty-time{
+				@include pb('lines-45-b', 6px, #fff, #000, 0.3, 'mask');
+				flex-grow: 1;
+			}
+
+
+			.wcs-timetable__classes{
+				display: flex;
+				width: 100%;
+				flex-direction: column;
+				flex-grow: 1;
+			}
+
+			.wcs-day{
+				flex-basis: 10%;
+				flex-grow: 1;
+			}
+
+			& + .wcs-row{
+				margin: 0.4vh 0 0;
+				position: relative;
+			}
+
+		}
+
+		.wcs-timetable__week .wcs-day__title{
+			margin-bottom: 0 !important;
+		}
+
+		.wcs-timetable__week .wcs-day{
+			min-height: auto;
+		}
+
+		.wcs-timetable__week .wcs-day.wcs-day__time{
+			text-align: center;
+			align-self: stretch;
+			flex-basis: 90px;
+			flex-shrink: 0;
+			font-weight: bold;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+
+			&::before{
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: currentColor;
+				opacity: 0.05;
+			}
+		}
+
+		.wcs-timetable__week > .wcs-day{
+			@media (min-width: 992px){
+				display: none !important;
+			}
+		}
+	}
+
+	.wcs-navigation{
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		padding-bottom: 1em;
+
+		&__title{
+			align-self: center;
+			font-size: 120%;
+			padding-left: 1em;
+			padding-right: 1em;
+			font-weight: bold;
+		}
+
+		.wcs-btn{
+			border: none;
+			border-radius: 2px;
+		}
+		.wcs-btn--next{
+			align-self: flex-end;
+		}
+	}
+
+}

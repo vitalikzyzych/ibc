@@ -1,0 +1,21 @@
+$offset-widts: ( top, right, bottom, left);
+
+.xtd-offset-margin{
+  @each $direction in $offset-widts{
+    @for $i from 5 through 100{
+      @if $i % 5 == 0{
+        &--#{$direction}-#{$i}{
+
+          @include media-breakpoint-up(md) {
+      			margin-#{$direction}: -$i * 1% / 1.5;
+      		}
+
+      		@include media-breakpoint-up(lg) {
+      			margin-#{$direction}: -$i * 1%;
+      		}
+
+        }
+      }
+    }
+  }
+}

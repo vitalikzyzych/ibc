@@ -1,0 +1,150 @@
+.wcs-timetable--timeline{
+
+	h2{
+		text-align: center;
+	}
+
+}
+.wcs-timetable__timeline{
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
+	box-sizing: border-box;
+
+	@media( min-width: 768px ){
+		padding: 12.5vh 0;
+	}
+
+	@include pseudo-block( 'before', 'bg', 1, 0,false,0,false );
+
+	&::before{
+		left: 50%;
+		width: 0.3vh;
+		display: none;
+		border-radius: 10vh;
+		margin-left: -0.15vh;
+
+		@media( min-width: 768px ){
+			display: block;
+		}
+	}
+
+	&::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	.wcs-day{
+		text-align: left;
+		border-radius: 2px;
+		float: left;
+		box-sizing: border-box;
+		box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.15);
+		margin-bottom: 7.5vh;
+
+		&__inner{
+			margin: 0;
+			position: relative;
+			border-radius: inherit;
+			transition: width 400ms;
+		}
+
+		&__title{
+			font-weight: bold;
+			display: block;
+			font-size: 110%;
+			margin: 0 !important;
+			text-align: center;
+			transition: 200ms;
+			padding: 2.5vh 1vh;
+			border-top-right-radius: 2px;
+			border-top-left-radius: 2px;
+
+		}
+
+
+		&--canceled{
+
+			& > &__inner{
+
+				position: relative;
+				opacity: 0.75;
+
+				@include pb('lines-45-b', 6px, #fff, #000, 0.3, 'mask');
+				@include pseudo-block( 'after', 'bg', 0.05, 0,0,0,0 );
+
+				.wcs-class__image{
+					opacity: 0.25 !important;
+				}
+				.wcs-class__title,
+				.wcs-class__excerpt,
+				.wcs-class__meta,
+				.wcs-class__date-time,
+				.ti-time{
+					color: inherit !important;
+					opacity: 0.5;
+				}
+				.ti-time{
+					opacity: 1;
+				}
+
+			}
+
+		}
+
+		.wcs-modal-call{
+			cursor: pointer;
+		}
+
+	}
+	.wcs-class{
+
+		&__title{
+			font-size: 100%;
+			line-height: 1.7;
+			padding: 0.5vh 0;
+			color: inherit;
+			display: block;
+		}
+		&__excerpt{
+			font-size: 80%;
+			opacity: 0.5;
+			max-width: 300px;
+			margin: 0 auto;
+			line-height: 1.4;
+			padding-bottom: 0.5vh;
+		}
+
+	}
+	.wcs-timetable__classes{
+		padding: 4vh 2vh;
+		text-align: center;
+		border-bottom-left-radius: 2px;
+		border-bottom-right-radius: 2px;
+	}
+	.wcs-isotope-item,
+	.wcs-day{
+		width: 100%;
+
+		@media( min-width: 768px ){
+			width: 42.5%;
+		}
+	}
+	.wcs-isotope-gutter{
+		width: 0%;
+
+		@media( min-width: 768px ){
+			width: 15%;
+		}
+	}
+
+}
+.wcs-timetable__container[data-wcs-layout='7']{
+
+	.wcs-timetable__zero-data{
+		margin-top: 5vh;
+		display: none;
+	}
+
+}

@@ -1,0 +1,60 @@
+.bg{
+  &-no-repeat.bg-no-repeat{
+    background-repeat: no-repeat !important;
+  }
+  &-repeat-x.bg-repeat-x{
+    background-repeat: repeat-x !important;
+  }
+  &-repeat-y.bg-repeat-y{
+    background-repeat: repeat-y !important;
+  }
+  &-pos-left-bottom.bg-pos-left-bottom{
+    background-position: bottom left !important;
+  }
+  &-pos-left-center.bg-pos-left-center{
+    background-position: center left !important;
+  }
+  &-pos-left-top.bg-pos-left-top{
+    background-position: top left !important;
+  }
+  &-pos-right-bottom.bg-pos-right-bottom{
+    background-position: bottom right !important;
+  }
+  &-pos-right-center.bg-pos-right-center{
+    background-position: center right !important;
+  }
+  &-pos-right-top.bg-pos-right-top{
+    background-position: top right !important;
+  }
+  &-pos-center-bottom.bg-pos-center-bottom{
+    background-position: bottom center !important;
+  }
+  &-pos-center-center.bg-pos-center-center{
+    background-position: center center !important;
+  }
+  &-pos-center-top.bg-pos-center-top{
+    background-position: top center !important;
+  }
+
+}
+
+.row:before, .row:after{
+	display: none !important;
+}
+
+.vc_align_center{
+  margin: 0 auto;
+}
+
+.wpb_video_widget .wpb_video_wrapper{
+  padding-top: 0px !important;
+}
+
+@include media-breakpoint-down(sm) {
+  .wpb_text_column[style*=max-width]{
+    max-width: none !important;
+  }
+}
+.pp_overlay.pp_overlay.pp_overlay.pp_overlay{
+  opacity: 1 !important;
+}

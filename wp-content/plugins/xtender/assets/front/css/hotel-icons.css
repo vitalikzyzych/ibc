@@ -1,0 +1,826 @@
+@font-face {
+  font-family: "hotel-restaurant";
+  src: url("../fonts/hotel-restaurant.eot");
+  src: url("../fonts/hotel-restaurant.eot?#iefix") format("embedded-opentype"), url("../fonts/hotel-restaurant.woff") format("woff"), url("../fonts/hotel-restaurant.ttf") format("truetype"), url("../fonts/hotel-restaurant.svg#hotel-restaurant") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[data-icon]:before {
+  font-family: "hotel-restaurant" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class^="hotel-icon-"]:before,
+[class*=" hotel-icon-"]:before {
+  font-family: "hotel-restaurant" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block; }
+
+[class^="hotel-icon-"],
+[class*=" hotel-icon-"] {
+  width: 1.48571429em;
+  text-align: center;
+  display: inline-block; }
+  [class^="hotel-icon-"].hi-boxed,
+  [class*=" hotel-icon-"].hi-boxed {
+    width: 1.98046em;
+    height: 1.98046em;
+    line-height: 1.98046em;
+    border-radius: 300px;
+    vertical-align: middle; }
+  [class^="hotel-icon-"].hi-lg,
+  [class*=" hotel-icon-"].hi-lg {
+    font-size: 1.33333333em;
+    line-height: .75em; }
+    [class^="hotel-icon-"].hi-lg.hi-boxed,
+    [class*=" hotel-icon-"].hi-lg.hi-boxed {
+      line-height: 1.98046em; }
+  [class^="hotel-icon-"].hi-2x,
+  [class*=" hotel-icon-"].hi-2x {
+    font-size: 2em; }
+  [class^="hotel-icon-"].hi-3x,
+  [class*=" hotel-icon-"].hi-3x {
+    font-size: 3em; }
+  [class^="hotel-icon-"].hi-4x,
+  [class*=" hotel-icon-"].hi-4x {
+    font-size: 4em; }
+  [class^="hotel-icon-"].hi-5x,
+  [class*=" hotel-icon-"].hi-5x {
+    font-size: 5em; }
+
+h1 [class^="hotel-icon-"]:before,
+h1 [class*=" hotel-icon-"]:before,
+h2 [class^="hotel-icon-"]:before,
+h2 [class*=" hotel-icon-"]:before,
+h3 [class^="hotel-icon-"]:before,
+h3 [class*=" hotel-icon-"]:before,
+h4 [class^="hotel-icon-"]:before,
+h4 [class*=" hotel-icon-"]:before,
+h5 [class^="hotel-icon-"]:before,
+h5 [class*=" hotel-icon-"]:before,
+h6 [class^="hotel-icon-"]:before,
+h6 [class*=" hotel-icon-"]:before {
+  line-height: 1.75em; }
+
+.hotel-icon-001:before {
+  content: "a"; }
+
+.hotel-icon-002:before {
+  content: "b"; }
+
+.hotel-icon-003:before {
+  content: "c"; }
+
+.hotel-icon-004:before {
+  content: "d"; }
+
+.hotel-icon-005:before {
+  content: "e"; }
+
+.hotel-icon-006:before {
+  content: "f"; }
+
+.hotel-icon-007:before {
+  content: "g"; }
+
+.hotel-icon-008:before {
+  content: "h"; }
+
+.hotel-icon-009:before {
+  content: "i"; }
+
+.hotel-icon-010:before {
+  content: "j"; }
+
+.hotel-icon-011:before {
+  content: "k"; }
+
+.hotel-icon-065:before {
+  content: "l"; }
+
+.hotel-icon-012:before {
+  content: "m"; }
+
+.hotel-icon-013:before {
+  content: "n"; }
+
+.hotel-icon-026:before {
+  content: "o"; }
+
+.hotel-icon-025:before {
+  content: "p"; }
+
+.hotel-icon-024:before {
+  content: "q"; }
+
+.hotel-icon-023:before {
+  content: "r"; }
+
+.hotel-icon-022:before {
+  content: "s"; }
+
+.hotel-icon-021:before {
+  content: "t"; }
+
+.hotel-icon-020:before {
+  content: "u"; }
+
+.hotel-icon-019:before {
+  content: "v"; }
+
+.hotel-icon-018:before {
+  content: "w"; }
+
+.hotel-icon-017:before {
+  content: "x"; }
+
+.hotel-icon-016:before {
+  content: "y"; }
+
+.hotel-icon-015:before {
+  content: "z"; }
+
+.hotel-icon-014:before {
+  content: "A"; }
+
+.hotel-icon-027:before {
+  content: "B"; }
+
+.hotel-icon-028:before {
+  content: "C"; }
+
+.hotel-icon-029:before {
+  content: "D"; }
+
+.hotel-icon-030:before {
+  content: "E"; }
+
+.hotel-icon-031:before {
+  content: "F"; }
+
+.hotel-icon-032:before {
+  content: "G"; }
+
+.hotel-icon-033:before {
+  content: "H"; }
+
+.hotel-icon-034:before {
+  content: "I"; }
+
+.hotel-icon-035:before {
+  content: "J"; }
+
+.hotel-icon-036:before {
+  content: "K"; }
+
+.hotel-icon-038:before {
+  content: "L"; }
+
+.hotel-icon-039:before {
+  content: "M"; }
+
+.hotel-icon-037:before {
+  content: "N"; }
+
+.hotel-icon-052:before {
+  content: "O"; }
+
+.hotel-icon-051:before {
+  content: "P"; }
+
+.hotel-icon-050:before {
+  content: "Q"; }
+
+.hotel-icon-049:before {
+  content: "R"; }
+
+.hotel-icon-048:before {
+  content: "S"; }
+
+.hotel-icon-047:before {
+  content: "T"; }
+
+.hotel-icon-046:before {
+  content: "U"; }
+
+.hotel-icon-045:before {
+  content: "V"; }
+
+.hotel-icon-044:before {
+  content: "W"; }
+
+.hotel-icon-042:before {
+  content: "X"; }
+
+.hotel-icon-041:before {
+  content: "Y"; }
+
+.hotel-icon-040:before {
+  content: "Z"; }
+
+.hotel-icon-043:before {
+  content: "0"; }
+
+.hotel-icon-053:before {
+  content: "1"; }
+
+.hotel-icon-054:before {
+  content: "2"; }
+
+.hotel-icon-055:before {
+  content: "3"; }
+
+.hotel-icon-056:before {
+  content: "4"; }
+
+.hotel-icon-057:before {
+  content: "5"; }
+
+.hotel-icon-058:before {
+  content: "6"; }
+
+.hotel-icon-059:before {
+  content: "7"; }
+
+.hotel-icon-060:before {
+  content: "8"; }
+
+.hotel-icon-061:before {
+  content: "9"; }
+
+.hotel-icon-062:before {
+  content: "!"; }
+
+.hotel-icon-063:before {
+  content: "\""; }
+
+.hotel-icon-064:before {
+  content: "#"; }
+
+.hotel-icon-066:before {
+  content: "$"; }
+
+.hotel-icon-079:before {
+  content: "%"; }
+
+.hotel-icon-092:before {
+  content: "&"; }
+
+.hotel-icon-105:before {
+  content: "'"; }
+
+.hotel-icon-118:before {
+  content: "("; }
+
+.hotel-icon-131:before {
+  content: ")"; }
+
+.hotel-icon-144:before {
+  content: "*"; }
+
+.hotel-icon-157:before {
+  content: "+"; }
+
+.hotel-icon-067:before {
+  content: ","; }
+
+.hotel-icon-080:before {
+  content: "-"; }
+
+.hotel-icon-068:before {
+  content: "."; }
+
+.hotel-icon-081:before {
+  content: "/"; }
+
+.hotel-icon-093:before {
+  content: ":"; }
+
+.hotel-icon-094:before {
+  content: ";"; }
+
+.hotel-icon-095:before {
+  content: "<"; }
+
+.hotel-icon-096:before {
+  content: "="; }
+
+.hotel-icon-097:before {
+  content: ">"; }
+
+.hotel-icon-098:before {
+  content: "?"; }
+
+.hotel-icon-099:before {
+  content: "@"; }
+
+.hotel-icon-100:before {
+  content: "["; }
+
+.hotel-icon-101:before {
+  content: "]"; }
+
+.hotel-icon-102:before {
+  content: "^"; }
+
+.hotel-icon-103:before {
+  content: "_"; }
+
+.hotel-icon-104:before {
+  content: "`"; }
+
+.hotel-icon-091:before {
+  content: "{"; }
+
+.hotel-icon-090:before {
+  content: "|"; }
+
+.hotel-icon-089:before {
+  content: "}"; }
+
+.hotel-icon-088:before {
+  content: "~"; }
+
+.hotel-icon-087:before {
+  content: "\\"; }
+
+.hotel-icon-086:before {
+  content: "\e000"; }
+
+.hotel-icon-085:before {
+  content: "\e001"; }
+
+.hotel-icon-084:before {
+  content: "\e002"; }
+
+.hotel-icon-083:before {
+  content: "\e003"; }
+
+.hotel-icon-082:before {
+  content: "\e004"; }
+
+.hotel-icon-069:before {
+  content: "\e005"; }
+
+.hotel-icon-070:before {
+  content: "\e006"; }
+
+.hotel-icon-071:before {
+  content: "\e007"; }
+
+.hotel-icon-072:before {
+  content: "\e008"; }
+
+.hotel-icon-073:before {
+  content: "\e009"; }
+
+.hotel-icon-074:before {
+  content: "\e00a"; }
+
+.hotel-icon-075:before {
+  content: "\e00b"; }
+
+.hotel-icon-076:before {
+  content: "\e00c"; }
+
+.hotel-icon-077:before {
+  content: "\e00d"; }
+
+.hotel-icon-078:before {
+  content: "\e00e"; }
+
+.hotel-icon-117:before {
+  content: "\e00f"; }
+
+.hotel-icon-116:before {
+  content: "\e010"; }
+
+.hotel-icon-115:before {
+  content: "\e011"; }
+
+.hotel-icon-114:before {
+  content: "\e012"; }
+
+.hotel-icon-113:before {
+  content: "\e013"; }
+
+.hotel-icon-112:before {
+  content: "\e014"; }
+
+.hotel-icon-111:before {
+  content: "\e015"; }
+
+.hotel-icon-110:before {
+  content: "\e016"; }
+
+.hotel-icon-109:before {
+  content: "\e017"; }
+
+.hotel-icon-108:before {
+  content: "\e018"; }
+
+.hotel-icon-107:before {
+  content: "\e019"; }
+
+.hotel-icon-106:before {
+  content: "\e01a"; }
+
+.hotel-icon-119:before {
+  content: "\e01b"; }
+
+.hotel-icon-120:before {
+  content: "\e01c"; }
+
+.hotel-icon-121:before {
+  content: "\e01d"; }
+
+.hotel-icon-122:before {
+  content: "\e01e"; }
+
+.hotel-icon-123:before {
+  content: "\e01f"; }
+
+.hotel-icon-124:before {
+  content: "\e020"; }
+
+.hotel-icon-125:before {
+  content: "\e021"; }
+
+.hotel-icon-126:before {
+  content: "\e022"; }
+
+.hotel-icon-127:before {
+  content: "\e023"; }
+
+.hotel-icon-128:before {
+  content: "\e024"; }
+
+.hotel-icon-129:before {
+  content: "\e025"; }
+
+.hotel-icon-130:before {
+  content: "\e026"; }
+
+.hotel-icon-143:before {
+  content: "\e027"; }
+
+.hotel-icon-142:before {
+  content: "\e028"; }
+
+.hotel-icon-141:before {
+  content: "\e029"; }
+
+.hotel-icon-140:before {
+  content: "\e02a"; }
+
+.hotel-icon-139:before {
+  content: "\e02b"; }
+
+.hotel-icon-138:before {
+  content: "\e02c"; }
+
+.hotel-icon-137:before {
+  content: "\e02d"; }
+
+.hotel-icon-136:before {
+  content: "\e02e"; }
+
+.hotel-icon-135:before {
+  content: "\e02f"; }
+
+.hotel-icon-134:before {
+  content: "\e030"; }
+
+.hotel-icon-133:before {
+  content: "\e031"; }
+
+.hotel-icon-132:before {
+  content: "\e032"; }
+
+.hotel-icon-145:before {
+  content: "\e033"; }
+
+.hotel-icon-146:before {
+  content: "\e034"; }
+
+.hotel-icon-147:before {
+  content: "\e035"; }
+
+.hotel-icon-148:before {
+  content: "\e036"; }
+
+.hotel-icon-149:before {
+  content: "\e037"; }
+
+.hotel-icon-150:before {
+  content: "\e038"; }
+
+.hotel-icon-151:before {
+  content: "\e039"; }
+
+.hotel-icon-152:before {
+  content: "\e03a"; }
+
+.hotel-icon-153:before {
+  content: "\e03b"; }
+
+.hotel-icon-154:before {
+  content: "\e03c"; }
+
+.hotel-icon-155:before {
+  content: "\e03d"; }
+
+.hotel-icon-156:before {
+  content: "\e03e"; }
+
+.hotel-icon-169:before {
+  content: "\e03f"; }
+
+.hotel-icon-168:before {
+  content: "\e040"; }
+
+.hotel-icon-167:before {
+  content: "\e041"; }
+
+.hotel-icon-166:before {
+  content: "\e042"; }
+
+.hotel-icon-165:before {
+  content: "\e043"; }
+
+.hotel-icon-164:before {
+  content: "\e044"; }
+
+.hotel-icon-163:before {
+  content: "\e045"; }
+
+.hotel-icon-162:before {
+  content: "\e046"; }
+
+.hotel-icon-161:before {
+  content: "\e047"; }
+
+.hotel-icon-160:before {
+  content: "\e048"; }
+
+.hotel-icon-159:before {
+  content: "\e049"; }
+
+.hotel-icon-158:before {
+  content: "\e04a"; }
+
+.hotel-icon-170:before {
+  content: "\e04b"; }
+
+.hotel-icon-171:before {
+  content: "\e04c"; }
+
+.hotel-icon-172:before {
+  content: "\e04d"; }
+
+.hotel-icon-173:before {
+  content: "\e04e"; }
+
+.hotel-icon-174:before {
+  content: "\e04f"; }
+
+.hotel-icon-175:before {
+  content: "\e050"; }
+
+.hotel-icon-176:before {
+  content: "\e051"; }
+
+.hotel-icon-177:before {
+  content: "\e052"; }
+
+.hotel-icon-178:before {
+  content: "\e053"; }
+
+.hotel-icon-179:before {
+  content: "\e054"; }
+
+.hotel-icon-180:before {
+  content: "\e055"; }
+
+.hotel-icon-181:before {
+  content: "\e056"; }
+
+.hotel-icon-182:before {
+  content: "\e057"; }
+
+.hotel-icon-195:before {
+  content: "\e058"; }
+
+.hotel-icon-194:before {
+  content: "\e059"; }
+
+.hotel-icon-193:before {
+  content: "\e05a"; }
+
+.hotel-icon-192:before {
+  content: "\e05b"; }
+
+.hotel-icon-191:before {
+  content: "\e05c"; }
+
+.hotel-icon-190:before {
+  content: "\e05d"; }
+
+.hotel-icon-189:before {
+  content: "\e05e"; }
+
+.hotel-icon-188:before {
+  content: "\e05f"; }
+
+.hotel-icon-187:before {
+  content: "\e060"; }
+
+.hotel-icon-186:before {
+  content: "\e061"; }
+
+.hotel-icon-185:before {
+  content: "\e062"; }
+
+.hotel-icon-184:before {
+  content: "\e063"; }
+
+.hotel-icon-183:before {
+  content: "\e064"; }
+
+.hotel-icon-196:before {
+  content: "\e065"; }
+
+.hotel-icon-197:before {
+  content: "\e066"; }
+
+.hotel-icon-198:before {
+  content: "\e067"; }
+
+.hotel-icon-199:before {
+  content: "\e068"; }
+
+.hotel-icon-200:before {
+  content: "\e069"; }
+
+.hotel-icon-201:before {
+  content: "\e06a"; }
+
+.hotel-icon-202:before {
+  content: "\e06b"; }
+
+.hotel-icon-203:before {
+  content: "\e06c"; }
+
+.hotel-icon-204:before {
+  content: "\e06d"; }
+
+.hotel-icon-205:before {
+  content: "\e06e"; }
+
+.hotel-icon-206:before {
+  content: "\e06f"; }
+
+.hotel-icon-207:before {
+  content: "\e070"; }
+
+.hotel-icon-208:before {
+  content: "\e071"; }
+
+.hotel-icon-221:before {
+  content: "\e072"; }
+
+.hotel-icon-220:before {
+  content: "\e073"; }
+
+.hotel-icon-219:before {
+  content: "\e074"; }
+
+.hotel-icon-218:before {
+  content: "\e075"; }
+
+.hotel-icon-217:before {
+  content: "\e076"; }
+
+.hotel-icon-216:before {
+  content: "\e077"; }
+
+.hotel-icon-215:before {
+  content: "\e078"; }
+
+.hotel-icon-214:before {
+  content: "\e079"; }
+
+.hotel-icon-213:before {
+  content: "\e07a"; }
+
+.hotel-icon-212:before {
+  content: "\e07b"; }
+
+.hotel-icon-211:before {
+  content: "\e07c"; }
+
+.hotel-icon-210:before {
+  content: "\e07d"; }
+
+.hotel-icon-209:before {
+  content: "\e07e"; }
+
+.hotel-icon-222:before {
+  content: "\e07f"; }
+
+.hotel-icon-223:before {
+  content: "\e080"; }
+
+.hotel-icon-224:before {
+  content: "\e081"; }
+
+.hotel-icon-225:before {
+  content: "\e082"; }
+
+.hotel-icon-226:before {
+  content: "\e083"; }
+
+.hotel-icon-227:before {
+  content: "\e084"; }
+
+.hotel-icon-228:before {
+  content: "\e085"; }
+
+.hotel-icon-229:before {
+  content: "\e086"; }
+
+.hotel-icon-230:before {
+  content: "\e087"; }
+
+.hotel-icon-231:before {
+  content: "\e088"; }
+
+.hotel-icon-232:before {
+  content: "\e089"; }
+
+.hotel-icon-233:before {
+  content: "\e08a"; }
+
+.hotel-icon-234:before {
+  content: "\e08b"; }
+
+.hotel-icon-247:before {
+  content: "\e08c"; }
+
+.hotel-icon-246:before {
+  content: "\e08d"; }
+
+.hotel-icon-245:before {
+  content: "\e08e"; }
+
+.hotel-icon-244:before {
+  content: "\e08f"; }
+
+.hotel-icon-243:before {
+  content: "\e090"; }
+
+.hotel-icon-242:before {
+  content: "\e091"; }
+
+.hotel-icon-241:before {
+  content: "\e092"; }
+
+.hotel-icon-240:before {
+  content: "\e093"; }
+
+.hotel-icon-239:before {
+  content: "\e094"; }
+
+.hotel-icon-238:before {
+  content: "\e095"; }
+
+.hotel-icon-237:before {
+  content: "\e096"; }
+
+.hotel-icon-236:before {
+  content: "\e097"; }
+
+.hotel-icon-235:before {
+  content: "\e098"; }
+
+.hotel-icon-248:before {
+  content: "\e099"; }
+
+.hotel-icon-249:before {
+  content: "\e09a"; }
+
+.hotel-icon-250:before {
+  content: "\e09b"; }

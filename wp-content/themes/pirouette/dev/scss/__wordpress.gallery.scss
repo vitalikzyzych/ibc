@@ -1,0 +1,15 @@
+.ct-gallery{
+  &--grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.2rem;
+    min-width: 100%;
+
+    .item{
+      margin: 0 0 0.4rem 0;
+      padding: 0 0.2rem;
+      flex-basis: 33.33%;
+      flex-grow: 1;
+    }
+  }
+}

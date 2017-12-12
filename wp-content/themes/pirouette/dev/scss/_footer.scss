@@ -1,0 +1,37 @@
+.ct-footer{
+  position: relative;
+  width: 100%;
+  flex-grow: 0;
+
+  .row{
+    &::before{
+      display: none;
+      content: none;
+    }
+  }
+
+  &__logo{
+    text-align: center;
+    padding: 5rem 0;
+    position: relative;
+
+    @include pseudo-block( 'after', 'top', 0.125, false, 0, 0, 0 );
+
+    > a{
+      display: inline-block;
+    }
+  }
+
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+.scrollme{
+  overflow: hidden;
+}
+
+
+@import '_footer-navigation';
+@import '_footer-absolute';

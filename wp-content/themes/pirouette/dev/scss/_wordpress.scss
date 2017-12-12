@@ -1,0 +1,358 @@
+.ct-post__entry-meta,
+.ct-single__entry-meta{
+	padding-top: 0.125vh;
+	text-transform: capitalize;
+
+	.label{
+		display: block;
+		height: 8rem;
+		text-align: center;
+		margin-bottom: 2.4rem;
+		border-radius: 3px;
+
+		.fa{
+			line-height: 8rem;
+		}
+	}
+	&:first-of-type{
+		margin-top: 0;
+	}
+	.by-author{
+		font-size: 90%;
+		display: block;
+		position: relative;
+		border-top-width: 1px;
+		border-top-style: solid;
+		padding-top: 1.3rem;
+	}
+	.post-calendar-date{
+		padding-bottom: 0.8rem;
+		display: block;
+	}
+	span{
+		display: inline-block;
+		margin-right: 1rem;
+		color: inherit;
+
+		.fa{
+			margin-right: 0.7rem;
+		}
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	em{
+		opacity: 0.65;
+		font-style: normal;
+	}
+	a{
+		text-decoration: none;
+		color: inherit;
+	}
+	.ti-calendar,
+	.ti-comments,
+	.ti-layers,
+	.ti-tag{
+		font-size: 100%;
+		margin-right: 0.5em;
+	}
+}
+
+.blog,
+.search-results,
+.archive{
+}
+
+$posts-gutter: 50 / 16 / 2;
+
+.ct-posts{
+	margin: 0 -#{$posts-gutter }rem;
+
+	.ct-post{
+		width: 100%;
+		padding: 0 #{$posts-gutter}rem;
+		margin-bottom: 4rem;
+
+		@include media-breakpoint-up(lg) {
+			width: 50%;
+		}
+
+		.ct-blog--without-sidebar &{
+
+			@include media-breakpoint-up(md) {
+				width: 50%;
+			}
+
+			@include media-breakpoint-up(lg) {
+				width: 33.33%;
+			}
+
+		}
+
+		&__entry-meta{
+			font-size: .6275rem;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+
+		&__title{
+			margin-top: 1.875rem;
+			margin-bottom: 1.1rem;
+			letter-spacing: 0;
+
+			a, a:hover{
+				text-decoration: none;
+				font-weight: bold;
+			}
+		}
+
+		&__featured-link{
+			margin-bottom: 2rem;
+			display: block;
+		}
+
+		> header{
+			margin-bottom: 1.875rem;
+			position: relative;
+			padding-bottom: 1.1rem;
+
+			@include pseudo-block( 'after', 'top', 0.125, false, 0, 0, 0 );
+
+		}
+		.more-link{
+			display: block;
+			text-align: left;
+			margin-top: 1rem;
+			margin-right: auto;
+		}
+		&.sticky{
+			padding: 0 #{$posts-gutter * 3}rem #{$posts-gutter * 2}rem;
+			position: relative;
+
+			@include pseudo-block( 'before', 'bg', 1, 0, #{$posts-gutter}rem, 0, #{$posts-gutter}rem );
+
+			&::before{
+				background-color: transparent;
+				box-shadow: 0 0 20px 0 rgba(0,0,0,0.125);
+			}
+
+			.ct-post__featured-link{
+				margin-left: -#{$posts-gutter * 2}rem;
+				margin-right: -#{$posts-gutter * 2}rem;
+			}
+
+			header {
+				.ct-post__title:first-child{
+					margin-top: 2.5rem;
+				}
+			}
+		}
+
+		&.format-quote{
+
+			.ct-post__content{
+				padding: 2.5rem;
+				margin-bottom: 1.1rem;
+			}
+
+			> header{
+				padding-bottom: 0;
+				margin-bottom: 0;
+
+				&::after{
+					content: none;
+				}
+
+			}
+
+			cite a{
+				color: inherit;
+			}
+		}
+
+		&.format-video{
+			@include media-breakpoint-up(lg) {
+				width: 100%;
+			}
+
+			> header{
+				padding-bottom: 0;
+				margin-bottom: 0;
+				text-align: center;
+
+				&::after{
+					content: none;
+				}
+
+			}
+
+			.more-link{
+				display: none;
+			}
+
+		}
+
+		&.format-gallery{
+			> header{
+				text-align: center;
+				margin-bottom: 0;
+
+				&::after{
+					content: none;
+				}
+
+			}
+			.ct-post__entry-meta{
+				text-align: center;
+				padding-top: 1rem;
+			}
+			.ct-post__title{
+				margin: 0;
+			}
+		}
+
+		&.format-image.has-post-thumbnail{
+
+
+			> header{
+				margin: 0;
+				padding: 0;
+				text-align: center;
+				transition: all 200ms ease-in;
+
+				&::after{
+					content: none;
+				}
+			}
+
+		}
+
+		&.format-link{
+			border: 1px solid;
+
+			> header{
+				padding-bottom: 0;
+
+				&::after{
+					content: none;
+				}
+			}
+
+		}
+
+	}
+
+}
+
+
+/** Posts Pagination */
+@import '__wordpress.pagination';
+
+/** Post Navigation */
+@import '__wordpress.post-navigation';
+@import '__wordpress.comments';
+@import '__wordpress.sidebar';
+@import '__wordpress.gallery';
+
+.ct-link-pages{
+	font-size: 90%;
+	opacity: 0.8;
+	margin-top: 2rem;
+	position: relative;
+	padding-left: 4rem;
+
+	&::before{
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		width: 3rem;
+		border-top: 2px solid;
+		opacity: 0.125;
+	}
+
+	&__item{
+		display: inline-block;
+		min-width: 1.5em;
+		line-height: 1.5;
+		text-align: center;
+		margin: 0 .5rem;
+
+	}
+	a{
+		text-decoration: none;
+	}
+}
+
+
+.ct-post{
+
+	&__excerpt{
+
+		&:empty{
+			display: none;
+			margin-bottom: 0 !important;
+		}
+
+	}
+
+	&.format-quote{
+
+		blockquote{
+			margin: 0;
+			padding: 0;
+
+			p{
+				margin-bottom: 0 !important;
+			}
+		}
+
+	}
+
+}
+
+@import '__wordpress.single';
+
+/**
+ * Pre-WordPress Classes
+ * -----------------------------------------------------------------------------
+ */
+
+@import '__wordpress.defaults';
+
+
+/** Calendar */
+#wp-calendar { width: 100%; }
+#wp-calendar thead th { border: none; border-bottom: 1px solid;}
+#wp-calendar tbody td { text-align: center; border-bottom: 1px solid; line-height: 2.5em; transition: background 0.15s ease; -webkit-transition: background 0.15s ease; -o-transition: background 0.15s ease; -moz-transition: background 0.15s ease; }
+#wp-calendar tbody td a { display: block; text-decoration: none; }
+#wp-calendar tfoot td { padding-top: 1px; padding: 4px; }
+#wp-calendar caption {
+	cursor: pointer; text-transform: uppercase; margin: 0; padding: 12px; outline: 0 none !important; font-weight: bold;
+	text-align: center;
+	caption-side: top;
+}
+
+#wp-calendar tbody a { display: block; text-decoration: underline; }
+#wp-calendar th { text-align: center; border: 1px solid transparent; border-top: none; padding: 7px 0; }
+#wp-calendar tfoot td{
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: .8em;
+}
+#wp-calendar tfoot td{ padding: 10px 0 0 }
+#wp-calendar tfoot td:last-child{text-align: right;}
+
+
+
+/** Social Sharing */
+@import '__wordpress.sharing';
+
+/** Author Box */
+@import '__wordpress.author';
+
+.entry-content .twitter-tweet-rendered {
+    max-width: 100% !important;
+}
+iframe[id^='twitter-widget-']{ width:100% !important;}

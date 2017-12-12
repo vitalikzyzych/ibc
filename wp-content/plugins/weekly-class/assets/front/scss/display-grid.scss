@@ -1,0 +1,210 @@
+.wcs-timetable__grid{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	position: relative;
+	box-sizing: border-box;
+	
+	&::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	
+	.wcs-class{
+		text-align: left;
+		border-radius: 2px;
+		float: left;
+		margin-bottom: 2.5vh;
+		box-sizing: border-box;
+		box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.15);
+		
+		&__inner{
+			margin: 0;
+			position: relative;
+			border-radius: inherit;
+			transition: width 400ms;
+		}
+		
+		&__click-area{
+			position: absolute;
+			display: block;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 2;
+			cursor: pointer;
+		}
+		
+		&__minimize{
+			position: absolute;
+			top: 0.5vh;
+			right: 0.5vh;
+			z-index: 3;
+			padding: 1vh;
+			font-size: 80%;
+			border-radius: 2px;
+			display: none;
+			cursor: pointer;
+		}
+		
+		&__title{
+			font-weight: bold;
+			display: block;
+			font-size: 90%;
+			margin: 2vh 2vh 1vh !important;
+			text-align: center;
+			transition: 200ms;
+		}
+		
+		&__excerpt{
+			margin: 0 2vh 10px;
+			display: none;
+		}
+		
+		&__meta{
+			font-size: 85%;
+			margin: 2vh 2vh 0 !important;
+			display: none;
+			
+			&-label{
+				font-weight: bold;
+				opacity: 0.75;
+				display: block;
+			}
+			
+		}
+		
+		&__date-time{
+			display: flex;
+			width: 100%;
+			padding-top: 1.5vh;
+			position: relative;
+			margin-top: 2vh;
+			padding-bottom:1.5vh;
+			font-size: 80%;
+			box-shadow: inset 0px 5px 5px -8px currentColor;
+			opacity: 0.85;
+			
+			@include pseudo-block( 'before', 'bg', 0.05, 0,0,0,0 );
+			
+			&::before{
+				border-bottom-left-radius: 2px;
+				border-bottom-right-radius: 2px;
+			}
+			
+		}
+		
+		&__time{
+			align-self: center;
+			text-align: left;
+			flex-grow: 1;
+			position: relative;
+			padding-left: 2vh;
+			
+			.ti-time{
+				margin-right: 1vh;
+			}
+
+		}
+		&__date{
+			align-self: center;
+			flex-grow: 1;
+			text-align: right;
+			padding-right: 2vh;
+			
+			.ti-calendar{
+				margin-right: 1vh;
+			}
+		}
+		&__image{
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+			border-top-left-radius: 2px;
+			border-top-right-radius: 2px;
+			max-width: 100%;
+			height: auto;
+			text-align: center;
+			
+			img{
+				max-width: 100%;
+				height: auto;
+				border-radius: inherit;
+			}
+		}
+		
+		&--canceled{
+			
+			& > &__inner{
+				
+				position: relative;
+				opacity: 0.75;
+				
+				@include pb('lines-45-b', 6px, #fff, #000, 0.3, 'mask');
+				@include pseudo-block( 'after', 'bg', 0.05, 0,0,0,0 );
+				
+				.wcs-class__image{
+					opacity: 0.25 !important;
+				}
+				.wcs-class__title,
+				.wcs-class__excerpt,
+				.wcs-class__meta,
+				.wcs-class__date-time,
+				.ti-time{
+					color: inherit !important;
+					opacity: 0.5;
+				}
+				.ti-time{
+					opacity: 1;
+				}
+				
+			}
+			
+		}
+		&--active{
+			
+			.wcs-class{
+				
+				&__title{
+					font-size: 120%;
+					text-align: left;
+				}
+				
+				&__excerpt{
+					display: block;
+				}
+				
+				&__meta{
+					display: block;
+				}
+				&__click-area{
+					display: none;
+				}
+				&__minimize{
+					display: block;
+				}
+				
+			}
+			
+		}
+		
+		.wcs-modal-call{
+			cursor: pointer;
+		}
+		
+	}
+	
+	.wcs-isotope-gutter{
+		width: 2%;
+	}
+	
+}
+.wcs-timetable__container[data-wcs-layout='7']{
+	
+	.wcs-timetable__zero-data{
+		margin-top: 5vh;
+		display: none;
+	}
+	
+}

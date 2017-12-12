@@ -1,0 +1,184 @@
+.wcs-timetable__agenda{
+
+	.wcs-timetable__agenda-nav,
+	.wcs-timetable__agenda-data{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li{
+			display: none;
+			list-style: none;
+			margin: 0;
+		}
+	}
+
+	.wcs-timetable__agenda-nav{
+		margin-bottom: 3vh;
+		width: 100%;
+		position: relative;
+		text-align: left;
+
+		a{
+			display: block;
+			padding: 1vh 0;
+			outline: none;
+			text-decoration: none;
+			box-shadow: none;
+			font-size: 100%;
+			text-align: center;
+			font-weight: bold;
+			min-width: 3vh;
+			cursor: pointer;
+
+			span{
+				display: block;
+				font-size: 140%;
+				font-weight: normal !important;
+			}
+		}
+		li{
+			display: inline-block;
+			position: relative;
+			margin: 0 1vh 1vh;
+
+			&.active{
+				&::before{
+					display: none;
+				}
+				+ li{
+					&::before{
+						display: none;
+					}
+				}
+				&::after{
+					content: '';
+					display: block;
+					position: absolute;
+					top: 100%;
+					left: 0;
+					right: 0;
+					border-bottom: 3px solid currentcolor;
+				}
+			}
+
+		}
+	}
+
+	.wcs-timetable__agenda-data{
+		> .active{
+			display: block;
+		}
+		li{
+			text-align: center;
+		}
+		span{
+			font-size: inherit;
+		}
+		.wcs-class{
+			display: flex;
+			padding-bottom: 2vh;
+			padding-left: 1vh;
+
+			& + .wcs-class{
+				padding-top: 2vh;
+				position: relative;
+
+				@include pseudo-block( 'before', 'top', 0.125, 0,0,false,0 );
+			}
+
+		}
+		.wcs-class,
+		.wcs-class__title{
+			text-align: left;
+		}
+		.wcs-class__duration{
+			width: 6vh;
+			height: 6vh;
+			min-width: 4em;
+			min-height: 4em;
+			font-size: 90%;
+			line-height: 1;
+			text-overflow: ellipsis;
+			display: flex;
+			vertical-align: center;
+			align-content: center;
+			align-items: center;
+			position: relative;
+			letter-spacing: -1px;
+			flex-grow: 0;
+			flex-basis: 6vh;
+			flex-shrink: 0;
+			align-self: center;
+
+			@include pseudo-block( 'before', 'border', 0.125, 0,0,0,0 );
+
+			&::before{
+				border-radius: 100%;
+			}
+			span{
+				width: 100%;
+				text-align: center;
+				font-weight: bold;
+				opacity: 0.75;
+			}
+		}
+		.wcs-class__title-meta{
+			align-self: center;
+			width: 100%;
+		}
+		.wcs-meta{
+			font-size: 90%;
+		}
+		.wcs-class__duration + .wcs-class__title-meta{
+			padding-left: 2vh;
+		}
+		.wcs-class__title{
+			margin: 0;
+		}
+		.wcs-class__time{
+
+			em{
+				display: inline-block;
+				white-space: normal;
+			}
+
+			.ti-time{
+				font-size: .8em;
+				margin-right: .25em;
+			}
+		}
+		.wcs-modal-call{
+			position: relative;
+			cursor: pointer;
+		}
+		.wcs-btn{
+			margin: 3px 0;
+		}
+		.wcs-class--canceled{
+			@include pb('lines-45-b', 6px, #fff, #000, 0.3, 'mask');
+
+			.wcs-class__time{
+				opacity: 0.35;
+			}
+		}
+		@media (max-width: 992px) {
+		 	.wcs-class__duration{
+			 	text-align: right;
+		 	}
+		 	.wcs-class__locations,
+		 	.wcs-class__instructors{
+
+			 	&::before{
+				 	content: attr(data-wcs-label);
+				 	display: block !important;
+				 	font-size: 80%;
+				 	position: static;
+				 	background-color: transparent;
+				 	opacity: 1 !important;
+			 	}
+
+		 	}
+		}
+	}
+}

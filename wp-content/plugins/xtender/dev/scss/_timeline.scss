@@ -1,0 +1,145 @@
+.xtd-timeline{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 1.5rem;
+    bottom: 0;
+    border-left: 1px solid currentColor;
+    opacity: 0.3;
+  }
+
+  &__item{
+    padding-left: 4rem;
+    padding-right: 2rem;
+    position: relative;
+
+    & + &{
+      margin-top: 2rem;
+    }
+
+    &::before{
+      content: attr(data-title);
+      padding-bottom: 2rem;
+      display: block;
+      line-height: 1.5;
+    }
+    &::after{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 1.5rem;
+      height: 1.5rem;
+      margin-left: -2px;
+      width: 4px;
+      background-color: currentColor;
+      opacity: 1;
+    }
+
+    @include media-breakpoint-up(md) {
+      width: 50%;
+      padding-left: 0;
+      padding-right: 4rem;
+
+      & + &{
+        margin-top: -2rem;
+      }
+
+      &::before{
+        position: absolute;
+        top: 4rem;
+        left: 100%;
+        padding-left: 4rem;
+        padding-bottom: 0;
+        width: 100%;
+      }
+      &::after{
+        top: 4rem;
+        left: 100%;
+      }
+
+      &:nth-child(2n){
+        margin-left: 50%;
+        padding-left: 4rem;
+        padding-right: 0;
+
+        &::before{
+          padding-right: 4rem;
+          text-align: right;
+          left: auto;
+          right: 100%;
+        }
+        &::after{
+          left: auto;
+          right: 100%;
+          margin-left: auto;
+          margin-right: -2px;
+        }
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 50%;
+      padding-left: 0;
+      padding-right: 6rem;
+
+      & + &{
+        margin-top: -3rem;
+      }
+
+      &::before{
+        position: absolute;
+        top: 6rem;
+        left: 100%;
+        padding-left: 6rem;
+        padding-bottom: 0;
+        width: 100%;
+      }
+      &::after{
+        top: 6rem;
+        left: 100%;
+      }
+
+      &:nth-child(2n){
+        margin-left: 50%;
+        padding-left: 6rem;
+        padding-right: 0;
+
+        &::before{
+          padding-right: 6rem;
+          text-align: right;
+          left: auto;
+          right: 100%;
+        }
+        &::after{
+          left: auto;
+          right: 100%;
+          margin-left: auto;
+          margin-right: -2px;
+        }
+      }
+    }
+
+  }
+
+  @include media-breakpoint-up(md) {
+    &::before{
+      left: 50%;
+      top: 2rem;
+      bottom: 2rem;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    &::before{
+      left: 50%;
+      top: 3rem;
+      bottom: 3rem;
+    }
+  }
+}

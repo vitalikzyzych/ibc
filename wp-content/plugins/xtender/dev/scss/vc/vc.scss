@@ -1,0 +1,369 @@
+.img-frame{
+
+  &-small{
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: .75rem;
+    box-shadow: 0 1rem 3rem -1rem rgba(0,0,0,0.25)
+  }
+  &-large{
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 1rem;
+    box-shadow: 0 1rem 3rem -1rem rgba(0,0,0,0.25)
+  }
+
+}
+
+.caption{
+
+  &--right,
+  &--left{
+    position: relative;
+
+    .vc_figure-caption{
+      margin-top: 1.5em !important;
+      padding-left: 0;
+
+      @include media-breakpoint-up(lg) {
+        width: 100%;
+        position: absolute;
+        transform: rotate(270deg);
+        transform-origin: top right;
+        text-align: right;
+        margin-top: 0 !important;
+      }
+
+      &::before{
+        content: '';
+        width: 5em;
+        position: relative;
+        top: -0.35em;
+        border-top: 1px solid currentColor;
+        opacity: .5;
+        display: inline-block;
+        margin-right: 1em;
+      }
+
+    }
+
+  }
+
+  &--right{
+
+    @include media-breakpoint-up(lg) {
+
+      .vc_figure-caption{
+        left: 0;
+        top: 0;
+        padding-top: 1.5rem;
+      }
+
+    }
+
+  }
+
+  &--left{
+
+    @include media-breakpoint-up(lg) {
+
+      .vc_figure-caption{
+        transform: rotate(270deg) translateY(-100%);
+        padding-bottom: 1.5rem;
+        top: 0;
+        right: 100%;
+        left: auto;
+        width: 100%;
+      }
+
+    }
+
+  }
+
+}
+
+
+.oversized{
+
+  &--left,
+  &--right{
+    position: relative;
+
+    @include media-breakpoint-up(lg) {
+
+      .vc_single_image-img{
+        max-width: 110%;
+        position: relative;
+        //box-shadow: 0 3rem 5rem 0 rgba(105,88,42,0.27);
+      }
+
+    }
+
+  }
+
+  &--left{
+
+    @include media-breakpoint-up(lg) {
+
+      &.caption--left{
+
+        .vc_figure-caption{
+          right: 110%;
+        }
+
+      }
+
+      .vc_single_image-img{
+        left: -10%;
+      }
+
+    }
+
+  }
+
+  &--right.caption--right{
+
+    @include media-breakpoint-up(lg) {
+
+      .vc_figure-caption{
+        left: 10%;
+      }
+
+    }
+
+  }
+
+
+  &--left-lg{
+
+    @include media-breakpoint-up(sm) {
+      .vc_single_image-img{
+        max-width: 120%;
+        left: -20%;
+      }
+    }
+    @include media-breakpoint-up(md) {
+      .vc_single_image-img{
+        max-width: 140%;
+        left: -40%;
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      .vc_single_image-img{
+        max-width: 160%;
+        left: -60%;
+      }
+    }
+    @include media-breakpoint-up(xl) {
+      .vc_single_image-img{
+        max-width: 180%;
+        left: -80%;
+      }
+    }
+
+  }
+
+  &--right-lg{
+
+    @include media-breakpoint-up(sm) {
+      .vc_single_image-img{
+        max-width: 120%;
+      }
+    }
+    @include media-breakpoint-up(md) {
+      .vc_single_image-img{
+        max-width: 140%;
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      .vc_single_image-img{
+        max-width: 160%;
+      }
+    }
+    @include media-breakpoint-up(xl) {
+      .vc_single_image-img{
+        max-width: 180%;
+      }
+    }
+
+  }
+
+}
+
+.offset,
+.wpb_single_image.offset{
+
+  &--top,
+  &--bottom,
+  &--right,
+  &--left,
+  &--top-lg,
+  &--bottom-lg,
+  &--right-lg,
+  &--left-lg,
+  &--top-xl,
+  &--bottom-xl,
+  &--right-xl,
+  &--left-xl{
+    position: relative;
+  }
+
+  &--top{
+    @include media-breakpoint-up(md) {
+      margin-top: -5rem;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-top: -10rem;
+    }
+  }
+
+  &--bottom{
+    @include media-breakpoint-up(md) {
+      margin-bottom: -5rem;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-bottom: -10rem;
+    };
+  }
+
+  &--right{
+    @include media-breakpoint-up(md) {
+      margin-right: -1.5rem;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-right: -3rem;
+    };
+  }
+
+  &--left{
+    @include media-breakpoint-up(md) {
+      margin-left: -1.5rem;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-left: -3rem;
+    };
+  }
+
+  &--top-lg{
+    @include media-breakpoint-up(md) {
+      margin-top: -10rem;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-top: -20rem;
+    }
+  }
+
+  &--bottom-lg{
+    @include media-breakpoint-up(md) {
+      margin-bottom: -10rem;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-bottom: -20rem;
+    };
+  }
+
+  &--right-lg{
+    @include media-breakpoint-up(md) {
+      margin-right: -3rem;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-right: -6rem;
+    };
+  }
+
+  &--left-lg{
+    @include media-breakpoint-up(md) {
+      margin-left: -3rem;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-left: -6rem;
+    };
+  }
+
+  &--top-xl{
+    @include media-breakpoint-up(md) {
+      margin-top: -15rem;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-top: -30rem;
+    }
+  }
+
+  &--bottom-xl{
+    @include media-breakpoint-up(md) {
+      margin-bottom: -15rem;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-bottom: -30rem;
+    };
+  }
+
+  &--right-xl{
+    @include media-breakpoint-up(md) {
+      margin-right: 4rem;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-right: 8rem;
+    };
+  }
+
+  &--left-xl{
+    @include media-breakpoint-up(md) {
+      margin-left: 4rem;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-left: 8rem;
+    };
+  }
+
+}
+
+.z-index{
+  &--1{
+    position: relative;
+    z-index: 1;
+  }
+  &--2{
+    position: relative;
+    z-index: 2;
+  }
+  &--3{
+    position: relative;
+    z-index: 3;
+  }
+}
+
+
+.background--fixed{
+  background-attachment: fixed;
+}
+
+.text--inverted{
+  h1, h2, h3, h4, h5, h6, a,
+  .h1, .h2, .h3, .h4, .h5, .h6{
+    color: inherit;
+  }
+
+  a:hover{
+    color: inherit;
+    opacity: 0.9;
+  }
+}
+
+
+.blackboard{
+  background: #383535; /* fallback */
+  background:
+		linear-gradient(135deg, transparent 14px, #383535 0) top left,
+		linear-gradient(225deg, transparent 14px, #383535 0) top right,
+		linear-gradient(315deg, transparent 14px, #383535 0) bottom right,
+		linear-gradient(45deg,  transparent 14px, #383535 0) bottom left;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+  background-image: radial-gradient(circle at 0 0, rgba(204, 0, 0, 0) 18px, #383535 19px), radial-gradient(circle at 100% 0, rgba(204, 0, 0, 0) 18px, #383535 19px), radial-gradient(circle at 100% 100%, rgba(204, 0, 0, 0) 18px, #383535 19px), radial-gradient(circle at 0 100%, rgba(204, 0, 0, 0) 18px, #383535 19px);
+
+  > .vc_column-inner > .wpb_wrapper{
+    border-left: 1px solid rgba(255,255,255, 0.15);
+    border-right: 1px solid rgba(255,255,255, 0.15);
+  }
+}

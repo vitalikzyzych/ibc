@@ -1,0 +1,1579 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Events Schedule WP Plugin\n"
+"POT-Creation-Date: 2017-03-21 16:23+0200\n"
+"PO-Revision-Date: 2017-03-21 16:23+0200\n"
+"Last-Translator: Radu Cretu <ameriza@gmail.com>\n"
+"Language-Team: Radu Cretu <ameriza@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: weekly-class.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: api/api.woo.php:9
+msgid "Event Schedule Bookings"
+msgstr ""
+
+#: api/api.woo.php:143 api/api.woo.php:218 api/api.woo.php:473
+msgid "Sorry there are no more tickets available for this event."
+msgstr ""
+
+#: api/api.woo.php:236 api/api.woo.php:435
+msgid "Date"
+msgstr ""
+
+#: api/api.woo.php:237 api/api.woo.php:441
+msgid "Type"
+msgstr ""
+
+#: api/api.woo.php:238 api/api.woo.php:448
+msgid "Instructor"
+msgstr ""
+
+#: api/api.woo.php:239 api/api.woo.php:455 classes/class.classes.php:415
+msgid "Location"
+msgstr ""
+
+#: api/api.woo.php:374
+msgid "Event"
+msgstr ""
+
+#: api/api.woo.php:426
+msgid "Events Schedule Bookings"
+msgstr ""
+
+#: api/api.woo.php:432
+msgid "Event Date Label"
+msgstr ""
+
+#: api/api.woo.php:434
+msgid ""
+"Leave this field empty and the event date on the Cart, Checkout & Thank you "
+"page will be hidden."
+msgstr ""
+
+#: api/api.woo.php:439
+msgid "Event Types Label"
+msgstr ""
+
+#: api/api.woo.php:442
+msgid ""
+"Leave this field empty and the event types on the Cart, Checkout & Thank you "
+"page will be hidden."
+msgstr ""
+
+#: api/api.woo.php:446
+msgid "Event Instructors Label"
+msgstr ""
+
+#: api/api.woo.php:449
+msgid ""
+"Leave this field empty and the event instructors on the Cart, Checkout & "
+"Thank you page will be hidden."
+msgstr ""
+
+#: api/api.woo.php:453
+msgid "Event Locations Label"
+msgstr ""
+
+#: api/api.woo.php:456
+msgid ""
+"Leave this field empty and the event locations on the Cart, Checkout & Thank "
+"you page will be hidden."
+msgstr ""
+
+#: api/api.woo.php:460
+msgid "Redirect after \"Add Ticket to Cart\""
+msgstr ""
+
+#: api/api.woo.php:463
+msgid ""
+"Choose where you want your visitor to be redirected after adding a ticket to "
+"the cart"
+msgstr ""
+
+#: api/api.woo.php:465
+msgid "Cart Page"
+msgstr ""
+
+#: api/api.woo.php:466
+msgid "Checkout Page"
+msgstr ""
+
+#: api/api.woo.php:471
+msgid "Capacity Error Message"
+msgstr ""
+
+#: api/api.woo.php:487
+msgid "Schedule Ticket"
+msgstr ""
+
+#: api/api.woo.php:530
+msgid "Bookings"
+msgstr ""
+
+#: api/api.woo.php:563
+msgid "Event Date & Time"
+msgstr ""
+
+#: api/api.woo.php:564
+msgid "Order"
+msgstr ""
+
+#: api/api.woo.php:565
+msgid "Client"
+msgstr ""
+
+#: api/api.woo.php:566
+msgid "Tickets"
+msgstr ""
+
+#: api/api.woo.php:567
+msgid "Order Status"
+msgstr ""
+
+#: api/api.woo.php:622
+#, php-format
+msgid "%s bookings"
+msgstr ""
+
+#: api/api.woo.php:640
+msgid "There are no bookings for this event."
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:16
+msgid "No Pages"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:24
+#: assets/defaults/admin/array.meta-options.php:30
+msgid "Class Image"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:31
+msgid "Choose your class image"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:39
+msgid "Action Button"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:45
+#: assets/defaults/admin/array.meta-options.php:195
+msgid "Button Label"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:46
+#: assets/defaults/admin/array.meta-options.php:189
+#: assets/defaults/admin/array.meta-options.php:196
+#: assets/defaults/admin/array.meta-options.php:203
+#: assets/defaults/admin/array.meta-options.php:210
+#: assets/defaults/admin/array.meta-options.php:219
+#: classes/class.metaboxes.php:91 classes/class.metaboxes.php:96
+msgid "Note"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:46
+msgid "Leaving this field blank will hide the action button for this class."
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:53
+msgid "Go to page"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:54
+msgid "Go to custom URL"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:55
+#: assets/defaults/admin/array.meta-options.php:78
+msgid "Email"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:56
+msgid "Download iCal Event"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:58
+msgid "Button Action"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:65
+msgid "Go to Page"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:71
+msgid "Custom URL"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:72
+msgid "Enter your custom URL in this field"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:79
+msgid "Enter your email in this field"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:86
+msgid "Same Window"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:87
+msgid "New Window"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:89
+msgid "Button Target"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:96
+msgid "Map Details"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:102
+msgid "Map Latitude"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:103
+msgid "Latitude Coordinates (Please use decimal coordinates. ie. 51.508056)"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:109
+msgid "Map Longitude"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:110
+msgid "Longitude Coordinates (Please use decimal coordinates. ie. -0.128056)"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:116
+#: classes/class.settings.php:351
+msgid "Map Type"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:118
+#: classes/class.settings.php:355
+msgid "Roadmap"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:119
+#: classes/class.settings.php:356
+msgid "Satellite"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:120
+msgid "Hybrid"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:121
+msgid "Terrain"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:129
+msgid "Map Color Theme"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:131
+msgid "Default"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:132
+msgid "Light"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:133
+msgid "Dark"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:141
+msgid "Map Zoom"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:143
+msgid "Choose the map zoom level. Default level is 15"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:160
+msgid "Select product to be used as ticket"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:182
+msgid "WooCommerce Tickets"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:188
+msgid "Capacity"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:189
+msgid ""
+"Enter the maximum capacity for this event. Leaving this blank will hide the "
+"purchase button."
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:196
+msgid "Leaving this field blank will hide the purchase button for this event."
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:202
+msgid "Sold Out Label"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:203
+msgid "Leaving this field blank will hide the sold out button for this event."
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:209
+msgid "Sold Out Link"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:210
+msgid ""
+"Leaving this field blank will make the sold out button not clickable for "
+"this event."
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:218
+msgid "WooCommerce Event Ticket"
+msgstr ""
+
+#: assets/defaults/admin/array.meta-options.php:219
+msgid ""
+"All tickets must be of type \"Schedule Ticket\" and have visibility set to "
+"hidden."
+msgstr ""
+
+#: assets/defaults/admin/colors.php:5
+msgid "General Coloring"
+msgstr ""
+
+#: assets/defaults/admin/colors.php:10
+msgid "Text Color:"
+msgstr ""
+
+#: assets/defaults/admin/colors.php:14
+msgid "Special Color:"
+msgstr ""
+
+#: assets/defaults/admin/colors.php:20
+msgid "Weekdays Coloring"
+msgstr ""
+
+#: assets/defaults/admin/colors.php:25
+msgid "Monday Color:"
+msgstr ""
+
+#: assets/defaults/admin/colors.php:29
+msgid "Tuesday Color:"
+msgstr ""
+
+#: assets/defaults/admin/colors.php:33
+msgid "Wendsday Color:"
+msgstr ""
+
+#: assets/defaults/admin/colors.php:37
+msgid "Thursday Color:"
+msgstr ""
+
+#: assets/defaults/admin/colors.php:41
+msgid "Friday Color:"
+msgstr ""
+
+#: assets/defaults/admin/colors.php:45
+msgid "Saturday Color:"
+msgstr ""
+
+#: assets/defaults/admin/colors.php:49
+msgid "Sunday Color:"
+msgstr ""
+
+#: assets/defaults/admin/display_options.php:8
+msgid "Show Schedule Title"
+msgstr ""
+
+#: assets/defaults/admin/display_options.php:9
+msgid "Checking this option will make your title visible"
+msgstr ""
+
+#: assets/defaults/admin/display_options.php:15 classes/class.settings.php:281
+msgid "Show Ending Time"
+msgstr ""
+
+#: assets/defaults/admin/display_options.php:21
+#: assets/defaults/admin/modal_options.php:35 classes/class.settings.php:289
+msgid "Show Duration"
+msgstr ""
+
+#: assets/defaults/admin/display_options.php:27
+msgid "Show Description"
+msgstr ""
+
+#: assets/defaults/admin/display_options.php:33
+msgid "Show Excerpt"
+msgstr ""
+
+#: assets/defaults/admin/display_options.php:39
+msgid "Show More Button"
+msgstr ""
+
+#: assets/defaults/admin/display_options.php:45
+msgid "Show 12-hour Clock"
+msgstr ""
+
+#: assets/defaults/admin/display_options.php:51
+#: assets/defaults/admin/modal_options.php:47
+msgid "Date Format"
+msgstr ""
+
+#: assets/defaults/admin/display_options.php:52
+#: assets/defaults/admin/modal_options.php:48
+msgid ""
+"Available date & time formats available here: <a href=\"https://codex."
+"wordpress.org/Formatting_Date_and_Time\" target=\"_blank\">WordPress Date "
+"Formatting</a>"
+msgstr ""
+
+#: assets/defaults/admin/display_options.php:59
+msgid "Show Past Events"
+msgstr ""
+
+#: assets/defaults/admin/display_options.php:60
+#: assets/defaults/admin/display_options.php:67
+msgid ""
+"Enabling this option, will hide your future events. This options is only to "
+"be used if you wish to display a list of non-repeatable past events."
+msgstr ""
+
+#: assets/defaults/admin/display_options.php:66
+msgid "Past Events Starting Date"
+msgstr ""
+
+#: assets/defaults/admin/display_options.php:85
+#: assets/defaults/admin/modal_options.php:58
+#, php-format
+msgid "Show %s"
+msgstr ""
+
+#: assets/defaults/admin/filters_options.php:9
+#, php-format
+msgid "Show %s Filter"
+msgstr ""
+
+#: assets/defaults/admin/filters_options.php:16
+msgid "Show Day of the Week Filter"
+msgstr ""
+
+#: assets/defaults/admin/filters_options.php:22
+msgid "Show Time of the Day Filter"
+msgstr ""
+
+#: assets/defaults/admin/filters_options.php:29
+msgid "Filters Position"
+msgstr ""
+
+#: assets/defaults/admin/filters_options.php:35 classes/class.settings.php:247
+msgid "Left"
+msgstr ""
+
+#: assets/defaults/admin/filters_options.php:40 classes/class.settings.php:248
+msgid "Center"
+msgstr ""
+
+#: assets/defaults/admin/filters_options.php:45 classes/class.settings.php:249
+msgid "Right"
+msgstr ""
+
+#: assets/defaults/admin/filters_options.php:52
+msgid "Show Filters as Switches"
+msgstr ""
+
+#: assets/defaults/admin/filters_options.php:58
+msgid "Show Filters Expanded"
+msgstr ""
+
+#: assets/defaults/admin/labels.php:5
+msgid "Days of The Week Filter Label"
+msgstr ""
+
+#: assets/defaults/admin/labels.php:7
+msgid "Enter the days of the week filter label here"
+msgstr ""
+
+#: assets/defaults/admin/labels.php:10
+msgid "Time of the Day Filter Label"
+msgstr ""
+
+#: assets/defaults/admin/labels.php:12
+msgid "Enter the time of the Day filter label here"
+msgstr ""
+
+#: assets/defaults/admin/labels.php:15
+msgid "More Classes Button Label"
+msgstr ""
+
+#: assets/defaults/admin/labels.php:17
+msgid "Enter the more classes button label here"
+msgstr ""
+
+#: assets/defaults/admin/labels.php:18
+msgid "More Classes"
+msgstr ""
+
+#: assets/defaults/admin/labels.php:21
+msgid "Filters Toggle Button Label"
+msgstr ""
+
+#: assets/defaults/admin/labels.php:23
+msgid "Enter the filters toggle button label here"
+msgstr ""
+
+#: assets/defaults/admin/labels.php:26
+msgid "Info Button Label"
+msgstr ""
+
+#: assets/defaults/admin/labels.php:28
+msgid "Enter the info button label here"
+msgstr ""
+
+#: assets/defaults/admin/labels.php:29
+msgid "..."
+msgstr ""
+
+#: assets/defaults/admin/labels.php:32
+msgid "Nothing to Show Message"
+msgstr ""
+
+#: assets/defaults/admin/labels.php:34
+msgid "Enter the no results text here"
+msgstr ""
+
+#: assets/defaults/admin/labels.php:35
+msgid "Nothing to show."
+msgstr ""
+
+#: assets/defaults/admin/modal_options.php:11
+msgid "Small"
+msgstr ""
+
+#: assets/defaults/admin/modal_options.php:16
+msgid "Large"
+msgstr ""
+
+#: assets/defaults/admin/modal_options.php:21 classes/class.settings.php:246
+msgid "Disabled"
+msgstr ""
+
+#: assets/defaults/admin/modal_options.php:29
+msgid "Enabled Light Modal Window"
+msgstr ""
+
+#: assets/defaults/admin/modal_options.php:41
+msgid "Show Starting & Ending Time"
+msgstr ""
+
+#: assets/defaults/admin/views.php:6 classes/class.vc.php:56
+msgid "Plain List"
+msgstr ""
+
+#: assets/defaults/admin/views.php:11 classes/class.vc.php:57
+msgid "Compact List"
+msgstr ""
+
+#: assets/defaults/admin/views.php:16 classes/class.vc.php:58
+msgid "Large List"
+msgstr ""
+
+#: assets/defaults/admin/views.php:21 classes/class.vc.php:59
+msgid "Weekly Schedule"
+msgstr ""
+
+#: assets/defaults/admin/views.php:26 classes/class.vc.php:60
+msgid "Weekly Tabs"
+msgstr ""
+
+#: assets/defaults/admin/views.php:31 classes/class.vc.php:61
+msgid "Daily Agenda"
+msgstr ""
+
+#: assets/defaults/admin/views.php:38 classes/class.vc.php:62
+msgid "Events Carousel"
+msgstr ""
+
+#: assets/defaults/admin/views.php:43
+msgid "Next Label"
+msgstr ""
+
+#: assets/defaults/admin/views.php:45
+msgid "Next"
+msgstr ""
+
+#: assets/defaults/admin/views.php:48
+msgid "Previous Label"
+msgstr ""
+
+#: assets/defaults/admin/views.php:50
+msgid "Prev"
+msgstr ""
+
+#: assets/defaults/admin/views.php:56
+msgid "Carousel Bg Color:"
+msgstr ""
+
+#: assets/defaults/admin/views.php:61
+msgid "Carousel Nav Color:"
+msgstr ""
+
+#: assets/defaults/admin/views.php:67
+msgid "Show Navigation Arrows"
+msgstr ""
+
+#: assets/defaults/admin/views.php:69
+msgid "Checking this option will enable arrows navigation"
+msgstr ""
+
+#: assets/defaults/admin/views.php:74
+msgid "Show Dots Arrows"
+msgstr ""
+
+#: assets/defaults/admin/views.php:76
+msgid "Checking this option will enable dots navigation"
+msgstr ""
+
+#: assets/defaults/admin/views.php:81
+msgid "Enable Autoplay"
+msgstr ""
+
+#: assets/defaults/admin/views.php:83
+msgid "Checking this option will autoplay the carousel"
+msgstr ""
+
+#: assets/defaults/admin/views.php:88
+msgid "Enable Loop Play"
+msgstr ""
+
+#: assets/defaults/admin/views.php:90
+msgid "Checking this option will loop the carousel"
+msgstr ""
+
+#: assets/defaults/admin/views.php:95
+msgid "Autoplay Speed:"
+msgstr ""
+
+#: assets/defaults/admin/views.php:107
+msgid "X-Large devices Items:"
+msgstr ""
+
+#: assets/defaults/admin/views.php:115
+msgid " item"
+msgstr ""
+
+#: assets/defaults/admin/views.php:116
+msgid " items"
+msgstr ""
+
+#: assets/defaults/admin/views.php:122 assets/defaults/admin/views.php:226
+msgid "Large devices Items:"
+msgstr ""
+
+#: assets/defaults/admin/views.php:133 assets/defaults/admin/views.php:237
+msgid "Medium devices Items:"
+msgstr ""
+
+#: assets/defaults/admin/views.php:144 assets/defaults/admin/views.php:248
+msgid "Small devices Items:"
+msgstr ""
+
+#: assets/defaults/admin/views.php:155
+msgid "Distance Between Items:"
+msgstr ""
+
+#: assets/defaults/admin/views.php:166
+msgid "Stage Padding:"
+msgstr ""
+
+#: assets/defaults/admin/views.php:181 classes/class.vc.php:63
+msgid "Masonry Grid"
+msgstr ""
+
+#: assets/defaults/admin/views.php:187
+msgid "Grid Item Bg Color:"
+msgstr ""
+
+#: assets/defaults/admin/views.php:193
+msgid "All Class Types Label"
+msgstr ""
+
+#: assets/defaults/admin/views.php:195 assets/defaults/admin/views.php:200
+#: assets/defaults/admin/views.php:205 assets/defaults/admin/views.php:210
+msgid "All"
+msgstr ""
+
+#: assets/defaults/admin/views.php:198 assets/defaults/admin/views.php:203
+msgid "All Class Locations Label"
+msgstr ""
+
+#: assets/defaults/admin/views.php:208
+msgid "All Class Instructors Label"
+msgstr ""
+
+#: assets/defaults/admin/views.php:213
+msgid "Any Days Label"
+msgstr ""
+
+#: assets/defaults/admin/views.php:215 assets/defaults/admin/views.php:220
+msgid "Any"
+msgstr ""
+
+#: assets/defaults/admin/views.php:218
+msgid "Any Time Label"
+msgstr ""
+
+#: assets/defaults/admin/views.php:261 classes/class.vc.php:64
+msgid "Timeline"
+msgstr ""
+
+#: assets/defaults/admin/views.php:267
+msgid "Timeline Item Bg Color:"
+msgstr ""
+
+#: assets/defaults/admin/views.php:274
+msgid "Monthly Schedule (beta)"
+msgstr ""
+
+#: assets/defaults/admin/views.php:280
+msgid "Event Color:"
+msgstr ""
+
+#: assets/defaults/admin/views.php:285
+msgid "Past Event Color:"
+msgstr ""
+
+#: assets/defaults/admin/views.php:290
+msgid "Today Color:"
+msgstr ""
+
+#: assets/defaults/admin/views.php:297
+msgid "Show More Link"
+msgstr ""
+
+#: assets/defaults/admin/views.php:299
+msgid "Checking this option will add the more link"
+msgstr ""
+
+#: assets/defaults/admin/views.php:304
+msgid "Sticky Days Header"
+msgstr ""
+
+#: assets/defaults/admin/views.php:306
+msgid "Checking this option will make your table days sticky"
+msgstr ""
+
+#: assets/defaults/admin/views.php:311
+msgid "Show Weekends"
+msgstr ""
+
+#: assets/defaults/admin/views.php:313
+msgid "Checking this option will show weekends"
+msgstr ""
+
+#: classes/class.builder.php:198 classes/class.builder.php:547
+msgid "Schedule Builder"
+msgstr ""
+
+#: classes/class.builder.php:219
+msgid "The Schedule has been deleted!"
+msgstr ""
+
+#: classes/class.builder.php:227
+msgid "The Schedule has been duplicated!"
+msgstr ""
+
+#: classes/class.builder.php:259
+msgid "Add New Schedule"
+msgstr ""
+
+#: classes/class.builder.php:259 classes/class.builder.php:578
+msgid "Edit Schedule"
+msgstr ""
+
+#: classes/class.builder.php:260
+msgid "Enter title here"
+msgstr ""
+
+#: classes/class.builder.php:263
+msgid "Schedule Style"
+msgstr ""
+
+#: classes/class.builder.php:264
+#, php-format
+msgid ""
+"Choose how you would like your schedule to look like. You have %d available "
+"styles."
+msgstr ""
+
+#: classes/class.builder.php:268
+msgid "Schedule Contents"
+msgstr ""
+
+#: classes/class.builder.php:269
+msgid ""
+"Choose what content should be included in your schedule. If you do not allow "
+"filters this default content will be limited and cannot be changed. If you "
+"allow filters, then this default content can be changed by filters."
+msgstr ""
+
+#: classes/class.builder.php:272
+msgid "Available Filters"
+msgstr ""
+
+#: classes/class.builder.php:273
+msgid ""
+"Choose what filters should be included in your schedule. If you allow "
+"filters, then this filters will be avaialble."
+msgstr ""
+
+#: classes/class.builder.php:276
+msgid "Schedule Labels"
+msgstr ""
+
+#: classes/class.builder.php:277 classes/class.builder.php:282
+msgid "For each label enter your desired value"
+msgstr ""
+
+#: classes/class.builder.php:281
+msgid "Design Options"
+msgstr ""
+
+#: classes/class.builder.php:286
+msgid "How many days to show?"
+msgstr ""
+
+#: classes/class.builder.php:288
+msgid "Show all Days"
+msgstr ""
+
+#: classes/class.builder.php:289
+msgid "1 Day"
+msgstr ""
+
+#: classes/class.builder.php:290
+msgid "2 Days"
+msgstr ""
+
+#: classes/class.builder.php:291
+msgid "3 Days"
+msgstr ""
+
+#: classes/class.builder.php:292
+msgid "4 Days"
+msgstr ""
+
+#: classes/class.builder.php:293
+msgid "5 Days"
+msgstr ""
+
+#: classes/class.builder.php:294
+msgid "6 Days"
+msgstr ""
+
+#: classes/class.builder.php:295
+msgid "1 Week"
+msgstr ""
+
+#: classes/class.builder.php:296
+msgid "2 Week"
+msgstr ""
+
+#: classes/class.builder.php:297
+msgid "3 Week"
+msgstr ""
+
+#: classes/class.builder.php:298
+msgid "4 Week"
+msgstr ""
+
+#: classes/class.builder.php:302
+msgid "Display Options"
+msgstr ""
+
+#: classes/class.builder.php:306
+msgid "Modal Options"
+msgstr ""
+
+#: classes/class.builder.php:310
+msgid "Filters Options"
+msgstr ""
+
+#: classes/class.builder.php:315 classes/class.builder.php:576
+msgid "Are you sure you want to delete this?"
+msgstr ""
+
+#: classes/class.builder.php:316
+msgid "Move to Trash"
+msgstr ""
+
+#: classes/class.builder.php:317
+msgid "Save"
+msgstr ""
+
+#: classes/class.builder.php:318
+msgid "Saving"
+msgstr ""
+
+#: classes/class.builder.php:320
+msgid "The Schedule has been updated!"
+msgstr ""
+
+#: classes/class.builder.php:321
+msgid "The Schedule has been created!"
+msgstr ""
+
+#: classes/class.builder.php:322
+msgid "Something went wrong. Please try again."
+msgstr ""
+
+#: classes/class.builder.php:367
+msgid "Clear Date"
+msgstr ""
+
+#: classes/class.builder.php:422
+msgid "Click to topy"
+msgstr ""
+
+#: classes/class.builder.php:443 classes/class.builder.php:462
+msgid "Clear all"
+msgstr ""
+
+#: classes/class.builder.php:473
+msgid " Label"
+msgstr ""
+
+#: classes/class.builder.php:474 classes/class.builder.php:478
+msgid "Enter the type label here"
+msgstr ""
+
+#: classes/class.builder.php:477
+msgid " Filter Label"
+msgstr ""
+
+#: classes/class.builder.php:516
+msgid "Options"
+msgstr ""
+
+#: classes/class.builder.php:555 classes/class.builder.php:586
+msgid "Title"
+msgstr ""
+
+#: classes/class.builder.php:556 classes/class.builder.php:587
+msgid "View"
+msgstr ""
+
+#: classes/class.builder.php:557 classes/class.builder.php:588
+msgid "Days"
+msgstr ""
+
+#: classes/class.builder.php:558 classes/class.builder.php:589
+msgid "Shortcode"
+msgstr ""
+
+#: classes/class.builder.php:559 classes/class.builder.php:590
+msgid "Actions"
+msgstr ""
+
+#: classes/class.builder.php:564 classes/class.classes.php:489
+msgid "No classes found."
+msgstr ""
+
+#: classes/class.builder.php:569
+msgid "(no title)"
+msgstr ""
+
+#: classes/class.builder.php:573
+msgid "Show All"
+msgstr ""
+
+#: classes/class.builder.php:573
+msgid " Days"
+msgstr ""
+
+#: classes/class.builder.php:576
+msgid "Delete Schedule"
+msgstr ""
+
+#: classes/class.builder.php:577
+msgid "Are you sure you want to duplicate this?"
+msgstr ""
+
+#: classes/class.builder.php:577
+msgid "Duplicate Schedule"
+msgstr ""
+
+#: classes/class.builder.php:595
+msgid "Backup Options"
+msgstr ""
+
+#: classes/class.builder.php:614
+msgid "Download Backup"
+msgstr ""
+
+#: classes/class.classes.php:62
+msgid "Your Class has been duplicated!"
+msgstr ""
+
+#: classes/class.classes.php:182
+msgid "Duplicate Class"
+msgstr ""
+
+#: classes/class.classes.php:215
+msgid "Starting"
+msgstr ""
+
+#: classes/class.classes.php:286 classes/class.classes.php:302
+msgid "Color"
+msgstr ""
+
+#: classes/class.classes.php:288 classes/class.classes.php:305
+msgid "Choose your type color"
+msgstr ""
+
+#: classes/class.classes.php:318
+msgctxt "Taxonomy Description"
+msgid "Description"
+msgstr ""
+
+#: classes/class.classes.php:325
+msgid ""
+"The description is not prominent by default; however, some themes may show "
+"it."
+msgstr ""
+
+#: classes/class.classes.php:385
+msgctxt "taxonomy general name"
+msgid "Class Types"
+msgstr ""
+
+#: classes/class.classes.php:386
+msgctxt "taxonomy singular name"
+msgid "Class Type"
+msgstr ""
+
+#: classes/class.classes.php:387
+msgid "Search Class Types"
+msgstr ""
+
+#: classes/class.classes.php:388
+msgid "All Class Types"
+msgstr ""
+
+#: classes/class.classes.php:389
+msgid "Parent Class"
+msgstr ""
+
+#: classes/class.classes.php:390
+msgid "Parent Class:"
+msgstr ""
+
+#: classes/class.classes.php:391 classes/class.classes.php:484
+msgid "Edit Class"
+msgstr ""
+
+#: classes/class.classes.php:392
+msgid "Update Class"
+msgstr ""
+
+#: classes/class.classes.php:393
+msgid "Add New Class Type"
+msgstr ""
+
+#: classes/class.classes.php:394
+msgid "New Class Type"
+msgstr ""
+
+#: classes/class.classes.php:395
+msgid "Class Types"
+msgstr ""
+
+#: classes/class.classes.php:411
+msgctxt "taxonomy general name"
+msgid "Locations"
+msgstr ""
+
+#: classes/class.classes.php:412
+msgctxt "taxonomy singular name"
+msgid "location"
+msgstr ""
+
+#: classes/class.classes.php:413
+msgid "Search Locations"
+msgstr ""
+
+#: classes/class.classes.php:414
+msgid "All Locations"
+msgstr ""
+
+#: classes/class.classes.php:416
+msgid "Location:"
+msgstr ""
+
+#: classes/class.classes.php:417
+msgid "Edit Location"
+msgstr ""
+
+#: classes/class.classes.php:418
+msgid "Update Location"
+msgstr ""
+
+#: classes/class.classes.php:419
+msgid "Add New Location"
+msgstr ""
+
+#: classes/class.classes.php:420
+msgid "New Location"
+msgstr ""
+
+#: classes/class.classes.php:421
+msgid "Separate locations with commas"
+msgstr ""
+
+#: classes/class.classes.php:422
+msgid "Add or remove locations"
+msgstr ""
+
+#: classes/class.classes.php:423
+msgid "Choose from the most used locations"
+msgstr ""
+
+#: classes/class.classes.php:424
+msgid "No locations found."
+msgstr ""
+
+#: classes/class.classes.php:425
+msgid "Locations"
+msgstr ""
+
+#: classes/class.classes.php:440
+msgctxt "taxonomy general name"
+msgid "Instructors"
+msgstr ""
+
+#: classes/class.classes.php:441
+msgctxt "taxonomy singular name"
+msgid "Instructor"
+msgstr ""
+
+#: classes/class.classes.php:442
+msgid "Search  Instructors"
+msgstr ""
+
+#: classes/class.classes.php:443
+msgid "Popular Instructors"
+msgstr ""
+
+#: classes/class.classes.php:444
+msgid "All Instructors"
+msgstr ""
+
+#: classes/class.classes.php:447
+msgid "Edit Instructor"
+msgstr ""
+
+#: classes/class.classes.php:448
+msgid "Update Instructor"
+msgstr ""
+
+#: classes/class.classes.php:449
+msgid "Add New Instructor"
+msgstr ""
+
+#: classes/class.classes.php:450
+msgid "New Instructor Name"
+msgstr ""
+
+#: classes/class.classes.php:451
+msgid "Separate instructors with commas"
+msgstr ""
+
+#: classes/class.classes.php:452
+msgid "Add or remove instructors"
+msgstr ""
+
+#: classes/class.classes.php:453
+msgid "Choose from the most used instructors"
+msgstr ""
+
+#: classes/class.classes.php:454
+msgid "No instructors found."
+msgstr ""
+
+#: classes/class.classes.php:455
+msgid "Instructors"
+msgstr ""
+
+#: classes/class.classes.php:477
+msgctxt "post type general name"
+msgid "Classes"
+msgstr ""
+
+#: classes/class.classes.php:478
+msgctxt "post type singular name"
+msgid "Class"
+msgstr ""
+
+#: classes/class.classes.php:479
+msgctxt "admin menu"
+msgid "Classes"
+msgstr ""
+
+#: classes/class.classes.php:480
+msgctxt "add new on admin bar"
+msgid "Class"
+msgstr ""
+
+#: classes/class.classes.php:481
+msgctxt "class"
+msgid "Add New"
+msgstr ""
+
+#: classes/class.classes.php:482
+msgid "Add New Class"
+msgstr ""
+
+#: classes/class.classes.php:483
+msgid "New Class"
+msgstr ""
+
+#: classes/class.classes.php:485
+msgid "View Class"
+msgstr ""
+
+#: classes/class.classes.php:486
+msgid "All Classes"
+msgstr ""
+
+#: classes/class.classes.php:487
+msgid "Search Classes"
+msgstr ""
+
+#: classes/class.classes.php:488
+msgid "Parent Classes:"
+msgstr ""
+
+#: classes/class.classes.php:490
+msgid "No classes found in Trash."
+msgstr ""
+
+#: classes/class.event.class.php:153 classes/class.single.php:122
+#, php-format
+msgid "%sh"
+msgid_plural "%sh"
+msgstr[0] ""
+msgstr[1] ""
+
+#: classes/class.event.class.php:155 classes/class.single.php:124
+#, php-format
+msgid "%d'"
+msgstr ""
+
+#: classes/class.ips.php:92
+msgid "Class Settings"
+msgstr ""
+
+#: classes/class.ips.php:334 classes/class.ips.php:336
+msgid "Upload Image"
+msgstr ""
+
+#: classes/class.ips.php:335
+msgid "Insert Image"
+msgstr ""
+
+#: classes/class.ips.php:337
+msgid "Clear Image"
+msgstr ""
+
+#: classes/class.ips.php:349 classes/class.ips.php:351
+msgid "Upload Video"
+msgstr ""
+
+#: classes/class.ips.php:350
+msgid "Insert Video"
+msgstr ""
+
+#: classes/class.ips.php:352
+msgid "Clear Video"
+msgstr ""
+
+#: classes/class.metaboxes.php:30
+msgid "Schedule Class"
+msgstr ""
+
+#: classes/class.metaboxes.php:76
+msgid "Starting Time:"
+msgstr ""
+
+#: classes/class.metaboxes.php:88
+msgid "No Repeat"
+msgstr ""
+
+#: classes/class.metaboxes.php:89
+msgid "Repeat Weekly"
+msgstr ""
+
+#: classes/class.metaboxes.php:91
+msgid ""
+"If you choose to repeat a class, the next one will be added when previous "
+"has started."
+msgstr ""
+
+#: classes/class.metaboxes.php:93
+msgid "Last Repeat Date:"
+msgstr ""
+
+#: classes/class.metaboxes.php:94
+msgid "Clear"
+msgstr ""
+
+#: classes/class.metaboxes.php:96
+msgid "Leave empty for infinite loop."
+msgstr ""
+
+#: classes/class.metaboxes.php:98
+msgid "Class Duration:"
+msgstr ""
+
+#: classes/class.metaboxes.php:105
+msgid "hour"
+msgstr ""
+
+#: classes/class.metaboxes.php:105
+msgid "hours"
+msgstr ""
+
+#: classes/class.metaboxes.php:105
+msgid "minutes"
+msgstr ""
+
+#: classes/class.metaboxes.php:109
+#, php-format
+msgid "%s hour"
+msgid_plural "%s hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: classes/class.metaboxes.php:110
+#, php-format
+msgid "%d minutes"
+msgstr ""
+
+#: classes/class.metaboxes.php:114
+msgid "Status:"
+msgstr ""
+
+#: classes/class.metaboxes.php:116
+msgid "Live"
+msgstr ""
+
+#: classes/class.metaboxes.php:117
+msgid "Canceled"
+msgstr ""
+
+#: classes/class.metaboxes.php:118
+msgid "Canceled Dates"
+msgstr ""
+
+#: classes/class.metaboxes.php:122
+msgid "When to Cancel?"
+msgstr ""
+
+#: classes/class.metaboxes.php:126 classes/class.metaboxes.php:135
+msgid "Select date"
+msgstr ""
+
+#: classes/class.metaboxes.php:127 classes/class.metaboxes.php:136
+msgid "Delete"
+msgstr ""
+
+#: classes/class.metaboxes.php:131
+msgid "Add Date"
+msgstr ""
+
+#: classes/class.settings.php:103 classes/class.settings.php:203
+msgid "Events Schedule Settings"
+msgstr ""
+
+#: classes/class.settings.php:103
+msgid "Settings"
+msgstr ""
+
+#: classes/class.settings.php:197
+msgid "Default Page"
+msgstr ""
+
+#: classes/class.settings.php:197
+msgid "Single Page"
+msgstr ""
+
+#: classes/class.settings.php:210
+msgid "Event Single Page"
+msgstr ""
+
+#: classes/class.settings.php:213
+msgid "Allow events to have a public single page"
+msgstr ""
+
+#: classes/class.settings.php:214
+msgid ""
+"Checking this field will allow visitors to view each event also as a "
+"separate page"
+msgstr ""
+
+#: classes/class.settings.php:219
+msgid "Event Page Template"
+msgstr ""
+
+#: classes/class.settings.php:233
+msgid "Event Page Slug"
+msgstr ""
+
+#: classes/class.settings.php:237
+msgid "Default: class. This field cannot be empty"
+msgstr ""
+
+#: classes/class.settings.php:242
+msgid "Events Box Position"
+msgstr ""
+
+#: classes/class.settings.php:255
+msgid "Special Color"
+msgstr ""
+
+#: classes/class.settings.php:259
+msgid ""
+"This color will be used in the titles and on the background of the buttons"
+msgstr ""
+
+#: classes/class.settings.php:264
+msgid "Event Page Date Format"
+msgstr ""
+
+#: classes/class.settings.php:268
+msgid ""
+"Default: F j @ H:i. Available date &amp; time formats available here: <a "
+"href=\"https://codex.wordpress.org/Formatting_Date_and_Time\" target=\"_blank"
+"\">WordPress Date Formatting</a>"
+msgstr ""
+
+#: classes/class.settings.php:273
+msgid "Show Time in 12h Format"
+msgstr ""
+
+#: classes/class.settings.php:276 classes/class.settings.php:284
+#: classes/class.settings.php:292 classes/class.settings.php:300
+#: classes/class.settings.php:308 classes/class.settings.php:316
+msgid "Yes"
+msgstr ""
+
+#: classes/class.settings.php:297
+msgid "Show Location"
+msgstr ""
+
+#: classes/class.settings.php:305
+msgid "Show Instructor"
+msgstr ""
+
+#: classes/class.settings.php:313
+msgid "Show Map"
+msgstr ""
+
+#: classes/class.settings.php:321
+msgid "Google Maps API Key"
+msgstr ""
+
+#: classes/class.settings.php:325
+msgid ""
+"For optimal performances we recommend using your own Google Maps API Key. "
+"You can create one here: <a href=\"\n"
+"https://developers.google.com/maps/documentation/javascript/get-api-key\" "
+"target=\"_blank\">Generate API Key</a>"
+msgstr ""
+
+#: classes/class.settings.php:331
+msgid "Map Theme"
+msgstr ""
+
+#: classes/class.settings.php:335
+msgid "Light theme"
+msgstr ""
+
+#: classes/class.settings.php:336
+msgid "Dark theme"
+msgstr ""
+
+#: classes/class.settings.php:342
+msgid "Map Zoom Level"
+msgstr ""
+
+#: classes/class.settings.php:346
+msgid "Default: 15"
+msgstr ""
+
+#: classes/class.settings.php:361
+msgid "Save Settings"
+msgstr ""
+
+#: classes/class.vc.php:65
+msgid "Monthly Schedule"
+msgstr ""
+
+#: classes/class.vc.php:73
+msgid "No Schedules Created"
+msgstr ""
+
+#: classes/class.vc.php:78
+msgid "Weekly Class Schedule"
+msgstr ""
+
+#: classes/class.vc.php:86
+msgid "Choose Schedule"
+msgstr ""
+
+#: classes/class.wcs.php:563
+msgid "Morning"
+msgstr ""
+
+#: classes/class.wcs.php:564
+msgid "Afternoon"
+msgstr ""
+
+#: classes/class.wcs.php:565
+msgid "Evening"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Events Schedule WP Plugin"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://demo.curlythemes.com/timetable-wordpress-plugin/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Easy management for weekly schedules with Timetable WP Plugin."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Curly Themes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://demo.curlythemes.com"
+msgstr ""

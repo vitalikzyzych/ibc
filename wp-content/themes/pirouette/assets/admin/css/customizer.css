@@ -1,0 +1,123 @@
+.customize-control {
+  box-sizing: border-box;
+  padding: 5px 0 15px;
+  /** Colors */
+  /** Checkbox Control */
+  /** Range Control */ }
+  .customize-control[style*='display: none;'] {
+    padding: 0 !important;
+    position: absolute; }
+  .customize-control .wp-picker-input-wrap .wp-picker-default,
+  .customize-control .wp-picker-input-wrap .wp-picker-clear {
+    margin-left: 5px; }
+  .customize-control.customize-control-image .actions {
+    margin-bottom: 0; }
+  .customize-control.customize-control-images .image {
+    display: inline-block;
+    min-width: 30px;
+    min-width: 30px;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1); }
+  .customize-control.customize-control-images input[type=radio] {
+    display: none; }
+  .customize-control.customize-control-checkbox label {
+    font-weight: 600; }
+  .customize-control .curly-slider.ui-slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #Fff;
+    outline: none;
+    box-sizing: border-box;
+    padding-right: 0;
+    padding-left: 0;
+    margin: 10px 0 10px;
+    position: relative; }
+  .customize-control .curly-slider .ui-slider-handle {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #555555;
+    -webkit-transition: opacity .15s ease-in-out;
+    transition: opacity .15s ease-in-out;
+    position: absolute;
+    box-sizing: border-box;
+    margin: -5px 0 0 -10px; }
+    .customize-control .curly-slider .ui-slider-handle:hover {
+      opacity: 0.85; }
+    .customize-control .curly-slider .ui-slider-handle:active {
+      opacity: 0.85; }
+  .customize-control.customize-control-typo .label-title {
+    display: block; }
+    .customize-control.customize-control-typo .label-title:first-of-type {
+      margin-top: 16px; }
+  .customize-control.customize-control-typo .label-title > span {
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600; }
+    .customize-control.customize-control-typo .label-title > span .range-value {
+      float: right; }
+  .customize-control.customize-control-typo .curly_font_family,
+  .customize-control.customize-control-typo .curly_font_variant,
+  .customize-control.customize-control-typo .curly_font_size,
+  .customize-control.customize-control-typo .curly_text_transform {
+    margin-bottom: 16px; }
+  .customize-control.customize-control-slider > label {
+    display: block; }
+  .customize-control.customize-control-slider .customize-control-title {
+    margin-bottom: 5px; }
+  .customize-control.customize-control-slider .range-value {
+    display: inline-block;
+    float: right;
+    opacity: .75;
+    font-size: .9em;
+    margin-left: 10px; }
+  .customize-control.customize-control-text input[type=text] {
+    border-radius: 2px;
+    padding: 5px 10px; }
+  .customize-control.customize-control-radio label {
+    line-height: 25px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 6px;
+    margin-bottom: 6px; }
+  .customize-control .customize-control-title {
+    margin-bottom: 0px; }
+
+.customize-section-description-container {
+  margin-bottom: 20px; }
+  .customize-section-description-container .description {
+    font-size: 0.85em; }
+    .customize-section-description-container .description::before {
+      content: 'INFO:';
+      display: inline-block;
+      margin-right: 5px;
+      font-weight: bold; }
+
+.customize-control-content .customizer-section-intro {
+  font-size: 0.85em;
+  margin-bottom: 20px; }
+  .customize-control-content .customizer-section-intro::before {
+    content: 'INFO:';
+    display: inline-block;
+    margin-right: 5px;
+    font-weight: bold; }
+
+.description.customize-control-description {
+  font-size: 0.9em;
+  opacity: 0.75;
+  font-weight: normal; }
+
+#customize-controls .description {
+  font-style: normal; }
+#customize-controls select {
+  width: 100%; }
+
+#accordion-section-nav {
+  position: relative;
+  margin-top: -15px;
+  margin-bottom: 15px; }

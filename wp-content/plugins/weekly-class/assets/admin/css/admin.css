@@ -1,0 +1,214 @@
+#wcs-schedule {
+  display: block !important; }
+  #wcs-schedule select,
+  #wcs-schedule .ui-datepicker select,
+  #wcs-schedule input[type=text] {
+    font-size: 12px;
+    height: 24px;
+    margin: 0;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+    border-radius: 2px; }
+  #wcs-schedule select[name="wcs-interval"] {
+    width: 49%;
+    float: right; }
+  #wcs-schedule select[name="wcs-hour"],
+  #wcs-schedule select[name="wcs-minutes"],
+  #wcs-schedule select[name="wcs-repeats-hour[]"],
+  #wcs-schedule select[name="wcs-repeats-minutes[]"] {
+    width: 24%; }
+  #wcs-schedule p {
+    margin-bottom: 5px; }
+  #wcs-schedule small {
+    margin: 10px 0 10px;
+    line-height: 1.5;
+    clear: both;
+    display: block;
+    opacity: 0.75; }
+  #wcs-schedule select[name="wcs-status"] {
+    float: right; }
+  #wcs-schedule input[name='wcs-repeats-day[]'] {
+    width: 49%;
+    outline: none; }
+
+#wcs-canceled {
+  margin-top: 20px; }
+  #wcs-canceled .wcs-canceled__item {
+    padding-bottom: 15px; }
+    #wcs-canceled .wcs-canceled__item + .wcs-canceled__item {
+      border-top: 1px dashed rgba(0, 0, 0, 0.1);
+      padding-top: 15px; }
+  #wcs-canceled p {
+    margin-top: 10px; }
+  #wcs-canceled a {
+    float: right; }
+
+#ui-datepicker-div {
+  display: none; }
+
+.wcs-datepicker-pop {
+  margin-top: 10px;
+  display: block !important; }
+  .wcs-datepicker-pop .ui-datepicker {
+    display: block !important; }
+  .wcs-datepicker-pop * {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+    float: none;
+    width: auto;
+    font-family: inherit;
+    font-weight: inherit;
+    text-align: inherit;
+    color: inherit;
+    vertical-align: inherit;
+    opacity: inherit;
+    line-height: inherit; }
+  .wcs-datepicker-pop .ui-datepicker.ui-datepicker {
+    background: transparent !important; }
+  .wcs-datepicker-pop .ui-datepicker-prev,
+  .wcs-datepicker-pop .ui-datepicker-next {
+    display: none; }
+  .wcs-datepicker-pop .ui-datepicker-month {
+    width: 49%; }
+  .wcs-datepicker-pop .ui-datepicker-year {
+    width: 49%;
+    float: right;
+    display: inline-block !important; }
+  .wcs-datepicker-pop .ui-datepicker-calendar {
+    width: 100%;
+    clear: both;
+    text-align: center;
+    margin: 5px 0 0 0;
+    border-spacing: 0;
+    table-layout: fixed; }
+    .wcs-datepicker-pop .ui-datepicker-calendar thead th {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      font-weight: bold;
+      padding: 5px 0; }
+    .wcs-datepicker-pop .ui-datepicker-calendar td {
+      line-height: 2em;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.025); }
+    .wcs-datepicker-pop .ui-datepicker-calendar td:nth-child(2n - 1) {
+      background-color: rgba(0, 0, 0, 0.025); }
+    .wcs-datepicker-pop .ui-datepicker-calendar .ui-state-default {
+      display: inline-block;
+      margin: 4px 2px; }
+    .wcs-datepicker-pop .ui-datepicker-calendar .ui-datepicker-unselectable .ui-state-default {
+      opacity: 0.5; }
+    .wcs-datepicker-pop .ui-datepicker-calendar .ui-datepicker-current-day a {
+      color: white;
+      border-radius: 300px;
+      min-width: 2em; }
+    .wcs-datepicker-pop .ui-datepicker-calendar a.ui-state-default {
+      text-decoration: none;
+      font-weight: bold; }
+
+#wcs-duration {
+  position: relative; }
+  #wcs-duration .slider_value {
+    text-align: right;
+    font-size: 90%;
+    text-transform: capitalize; }
+    #wcs-duration .slider_value > strong {
+      margin-right: 3px;
+      display: inline-block; }
+    #wcs-duration .slider_value > em {
+      font-style: normal; }
+  #wcs-duration .slider.ui-slider {
+    position: relative;
+    background: rgba(189, 195, 199, 0.35);
+    height: 6px;
+    border-radius: 100px;
+    margin: 15px 0;
+    border: 1px solid rgba(0, 0, 0, 0.15); }
+  #wcs-duration .slider.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    cursor: default;
+    background: #e74c3c;
+    transition: none;
+    text-decoration: none;
+    outline: none;
+    border-radius: 100px;
+    margin-left: -12px;
+    margin-top: -8px;
+    cursor: pointer;
+    top: auto;
+    box-shadow: none;
+    border: none; }
+
+.misc-pub-section.misc-pub-post-status {
+  display: none; }
+
+#wcs_image_metabox img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 2px; }
+
+#wcs_image_metabox #wcs-image-button {
+  min-width: 40px; }
+
+#wcs_action_metabox small {
+  margin-bottom: 15px;
+  display: block; }
+
+#wcs_action_metabox label {
+  margin-top: 15px;
+  display: block; }
+
+#wcs_action_metabox input[type*=text],
+#wcs_action_metabox select {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 12px; }
+
+#ui-datepicker-div.wcs-datepicker-pop,
+.wcs-datepicker-pop {
+  width: 230px;
+  background: #fff;
+  box-sizing: content-box;
+  padding: 10px;
+  box-shadow: 0px 0px 4px -2px rgba(0, 0, 0, 0.5);
+  z-index: 9999 !important; }
+  #ui-datepicker-div.wcs-datepicker-pop .ui-datepicker-title,
+  .wcs-datepicker-pop .ui-datepicker-title {
+    text-align: center; }
+  #ui-datepicker-div.wcs-datepicker-pop select,
+  .wcs-datepicker-pop select {
+    font-size: 12px;
+    line-height: 16px;
+    height: 24px;
+    margin: 0 !important;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+    border-radius: 2px; }
+
+.repeat_until {
+  width: 100%;
+  font-size: 12px; }
+
+#wcs-until a {
+  font-size: 90%;
+  float: right; }
+
+#wcs-schedule .wcs-admin-metabox-time {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -2px 16px; }
+  #wcs-schedule .wcs-admin-metabox-time p {
+    flex-grow: 1;
+    flex-basis: 100%; }
+  #wcs-schedule .wcs-admin-metabox-time select {
+    flex-basis: 22%;
+    flex-grow: 1;
+    margin: 0 2px; }
+  #wcs-schedule .wcs-admin-metabox-time input[type=text][readonly] {
+    width: 100%;
+    margin: 0 2px;
+    flex-basis: 45%;
+    flex-grow: 1; }

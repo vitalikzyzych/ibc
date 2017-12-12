@@ -1,0 +1,128 @@
+.modal .ninja-forms-required-items,
+.modal .ninja-forms-form-title {
+  display: none; }
+
+.modal[id*='prefill-modal'] .modal-body {
+  padding-top: 0; }
+
+div#ui-datepicker-div {
+  z-index: 1151 !important;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 1.4rem;
+  min-width: 25rem;
+  display: none;
+  text-align: center; }
+  div#ui-datepicker-div .ui-datepicker-calendar {
+    width: 100%; }
+  div#ui-datepicker-div .ui-datepicker-current-day {
+    border-radius: 2px; }
+    div#ui-datepicker-div .ui-datepicker-current-day .ui-state-active {
+      color: inherit; }
+  div#ui-datepicker-div .ui-datepicker-other-month {
+    opacity: 0.45; }
+  div#ui-datepicker-div td {
+    border-radius: 2px; }
+  div#ui-datepicker-div .ui-datepicker-title {
+    font-size: 90%;
+    margin-bottom: 10px; }
+    div#ui-datepicker-div .ui-datepicker-title span {
+      font-weight: bold; }
+  div#ui-datepicker-div .ui-datepicker-header .ui-datepicker-next {
+    float: right; }
+    div#ui-datepicker-div .ui-datepicker-header .ui-datepicker-next::before {
+      content: '\f178';
+      font-family: 'FontAwesome';
+      display: inline-block; }
+    div#ui-datepicker-div .ui-datepicker-header .ui-datepicker-next span {
+      display: none; }
+  div#ui-datepicker-div .ui-datepicker-header .ui-datepicker-prev {
+    float: left; }
+    div#ui-datepicker-div .ui-datepicker-header .ui-datepicker-prev::before {
+      content: '\f177';
+      font-family: 'FontAwesome';
+      display: inline-block; }
+    div#ui-datepicker-div .ui-datepicker-header .ui-datepicker-prev span {
+      display: none; }
+  div#ui-datepicker-div thead td, div#ui-datepicker-div thead th, div#ui-datepicker-div thead th span, div#ui-datepicker-div thead td span {
+    font-weight: bold;
+    text-align: center; }
+  div#ui-datepicker-div tbody td {
+    font-size: 90%; }
+
+.form-control[data-provide=date-picker],
+.ninja-forms-datepicker {
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: 27px;
+  padding-right: 35px; }
+
+.ninja-forms-response-msg {
+  margin: 0 0 1.4rem; }
+  .ninja-forms-response-msg.ninja-forms-error-msg p,
+  .ninja-forms-response-msg.ninja-forms-error-msg div {
+    font-weight: bold; }
+
+.ninja-forms-field-error,
+.ninja-forms-field-error p {
+  padding-top: 0.5rem;
+  font-weight: normal; }
+
+.ninja-forms-form .ninja-forms-all-fields-wrap {
+  margin: 0 -15px; }
+  .ninja-forms-form .ninja-forms-all-fields-wrap > * {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 15px; }
+  .ninja-forms-form .ninja-forms-all-fields-wrap .col-1-wrap {
+    width: 100%; }
+  .ninja-forms-form .ninja-forms-all-fields-wrap .col-2-wrap {
+    width: 50%; }
+  .ninja-forms-form .ninja-forms-all-fields-wrap .col-3-wrap {
+    width: 33.33333%; }
+  .ninja-forms-form .ninja-forms-all-fields-wrap .col-4-wrap {
+    width: 25%; }
+  .ninja-forms-form .ninja-forms-all-fields-wrap .col-5-wrap {
+    width: 66.66666%; }
+  .ninja-forms-form .ninja-forms-all-fields-wrap .col-6-wrap {
+    width: 50%; }
+  .ninja-forms-form .ninja-forms-all-fields-wrap .col-7-wrap {
+    width: 75%; }
+  .ninja-forms-form .ninja-forms-all-fields-wrap .textarea-wrap textarea {
+    height: 120px; }
+  .ninja-forms-form .ninja-forms-all-fields-wrap .field-wrap,
+  .ninja-forms-form .ninja-forms-all-fields-wrap #ninja_forms_required_items {
+    margin: 1.4rem 0 !important; }
+  .ninja-forms-form .ninja-forms-all-fields-wrap .field-wrap input[type=text],
+  .ninja-forms-form .ninja-forms-all-fields-wrap .field-wrap select,
+  .ninja-forms-form .ninja-forms-all-fields-wrap .field-wrap textarea {
+    width: 100%; }
+  .ninja-forms-form .ninja-forms-all-fields-wrap .field-wrap.calc-wrap input {
+    text-align: right;
+    font-weight: bold;
+    opacity: 1; }
+
+.slider-container .booking-row {
+  position: absolute;
+  left: 0;
+  bottom: 0; }
+
+@media (max-width: 991px) {
+  .booking-form div[class*=col-] {
+    margin-bottom: 1.4rem; }
+    .booking-form div[class*=col-]:last-of-type {
+      margin-bottom: 0; } }
+
+@media (max-width: 767px) {
+  .ninja-forms-form .ninja-forms-all-fields-wrap div[class*=col-] {
+    width: 100%;
+    float: none; }
+  .ninja-forms-form .ninja-forms-all-fields-wrap .field-wrap,
+  .ninja-forms-form .ninja-forms-all-fields-wrap #ninja_forms_required_items {
+    margin-bottom: 1.4rem; }
+  .booking-form div[class*=col-] {
+    margin-bottom: 1.4rem; }
+    .booking-form div[class*=col-]:last-of-type {
+      margin-bottom: 0; } }

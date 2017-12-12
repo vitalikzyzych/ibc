@@ -1,0 +1,61 @@
+.pullquote{
+
+	&.pull-right,
+	&.pull-left{
+		margin-bottom: .5rem;
+	}
+	@include media-breakpoint-up(md) {
+		max-width: 20rem;
+
+		&.pull-right{
+			margin-left: 2.5rem;
+
+		}
+		&.pull-left{
+			margin-right: 2.5rem;
+		}
+	}
+}
+.btn{
+	transition: all 80ms ease-in;
+	
+	&-link{
+		padding-left: 0;
+		padding-right: 0;
+
+		&::after{
+			content: '\25B8';
+			font-size: 0.65em;
+			display: inline-block;
+			border-radius: 100rem;
+			width: 2em;
+			height: 2em;
+			line-height: 2;
+			text-align: center;
+			margin-left: .85em;
+			position: relative;
+			top: -0.25em;
+			text-indent: .1em;
+			transition: all 200ms ease;
+		}
+
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+
+@include media-breakpoint-up(sm) {
+
+}
+
+@include media-breakpoint-up(md) {
+
+}
+
+@include media-breakpoint-up(lg) {
+
+}
+@include media-breakpoint-up(xl) {
+
+}

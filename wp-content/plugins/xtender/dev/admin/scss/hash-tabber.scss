@@ -1,0 +1,154 @@
+.hashTabber{
+
+  &-container{
+    display: flex;
+    width: 100%;
+  }
+
+  &-nav{
+    flex-basis: 180px;
+    background: #F5F5F5;
+    flex-grow: 0;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+
+    a{
+      display: block;
+      padding: 1em 15px;
+    }
+
+    li{
+      padding: 0;
+      margin: 0;
+    }
+
+    li.active > a{
+    	background: #fff;
+    	position: relative;
+    	z-index: 2;
+    	box-shadow: 0px 2px 2px -1px rgba(0, 0, 0, .07);
+      text-decoration: none;
+      color: inherit;
+    }
+
+    li:not(.active) + li{
+      border-top: 1px solid rgba(0,0,0,0.07)
+    }
+
+  }
+
+  &-data{
+    flex-grow: 3;
+    padding: 0 0 0 25px;
+    margin: 0;
+
+    li{
+      display: none;
+    }
+
+    li.active{
+      display: block;
+    }
+
+  }
+
+
+
+}
+/*
+.hashTabber-nav{
+	float: left;
+  width: 120px;
+	position: absolute;
+	height: 100%;
+	z-index: 1;
+
+	margin: 0;
+	padding: 0;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+.hashTabber-nav > li{
+	padding: 0;
+	margin: 0;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	float: none;
+	border: none;
+	color: inherit;
+	background: transparent;
+}
+.hashTabber-nav > li > a{
+	text-decoration: none;
+	outline: none;
+	text-decoration: none;
+	display: block;
+	padding: 10px 0 10px 20px;
+	line-height: 20px;
+	border-bottom: 1px solid #E5E5E5;
+	-webkit-transition: none;
+		-moz-transition: none;
+		-ms-transition: none;
+		-o-transition: none;
+		transition: none;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	float: none;
+}
+.hashTabber-nav > li.active > a{
+	background: #fff;
+	position: relative;
+	z-index: 2;
+	box-shadow: 0px 2px 2px -1px rgba(0, 0, 0, .07);
+}
+.hashTabber-nav::after{
+	content: ' ';
+	display: block;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	border-left: 1px solid  #E5E5E5;
+	top: 0;
+	bottom: 0;
+}
+
+
+.hashTabber-data{
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+  padding-left: 120px;
+	position: relative;
+	height: 100%;
+
+	background: #fff;
+	margin: 0;
+}
+.hashTabber-data > li{
+	display: none;
+	box-sizing: border-box;
+	padding: 0 30px;
+	width: 100%;
+}
+.hashTabber-data > li.active{
+	display: table;
+}
+
+
+#individual-page-settings-wrapper{
+  > .hashTabber-nav{
+    width: 180px;
+  }
+  > .hashTabber-data{
+    min-height: 289px;
+    padding-left: 180px;
+  }
+}
+
+*/

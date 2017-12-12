@@ -1,0 +1,315 @@
+.ct-sidebar{
+	margin-top: 4rem;
+
+	@include media-breakpoint-up(md) {
+		margin-top: auto;
+	}
+}
+.sidebar-widget{
+
+	ul, ol{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+
+		li{
+			position: relative;
+			padding: .25rem 0 .25rem 1.2rem;
+
+			&::before{
+				content: '—';
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0.6em;
+				font-size: 11px;
+				opacity: 0.35;
+			}
+
+		}
+
+	}
+
+	select{
+		display: block;
+		width: 100%;
+	}
+}
+.ct-sidebar .sidebar-widget{
+	font-size: 90%;
+	margin-bottom: 4rem;
+
+	.widget-title{
+		line-height: 1.25;
+	}
+
+	&.widget_archive,
+	&.widget_categories{
+
+
+		a{
+			display: inline-block;
+			margin-right: .5rem;
+			text-transform: capitalize;
+		}
+
+	}
+
+	&.widget_tag_cloud{
+
+		.tagcloud{
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+
+		.tag{
+			font-size: .6rem !important;
+			display: inline-block;
+			margin-bottom: .5rem;
+			position: relative;
+			padding: .4rem 1rem;
+			text-transform: uppercase;
+			text-decoration: none;
+			transition: opacity 80ms ease;
+
+			@include pseudo-block( 'before', 'bg', 1, 0, 0, 0, 0 );
+
+			&::before{
+				border:1px solid currentColor;
+				border-radius: 100rem;
+				z-index: -1;
+			}
+			&:hover{
+				opacity: .5;
+			}
+
+			&.large::before{
+				opacity: 1;
+			}
+
+			&.medium::before{
+				opacity: .80;
+			}
+
+			&.small::before{
+				opacity: .60;
+			}
+
+			&.x-small::before{
+				opacity: .30;
+			}
+
+		}
+	}
+
+	&.widget_rss{
+
+		.widget-title{
+			padding-left: 4rem;
+
+			.rss-widget-icon{
+				display: none;
+			}
+
+			.rsswidget:first-of-type{
+
+				&::before{
+					content: "\e75e";
+					font-family: 'themify';
+					font-size: 1.25em;
+					display: block;
+					margin-right: 1rem;
+					width: 3rem;
+					text-align: center;
+					border-bottom: 1px solid;
+					padding-bottom: 1rem;
+					position: absolute;
+					top: 0;
+					left: 0;
+					bottom: 0;
+				}
+
+			}
+
+			a{
+				text-decoration: none;
+			}
+
+		}
+
+		ul{
+
+			li{
+				padding-left: 0;
+				padding-bottom: 1rem;
+				margin-bottom: 2rem;
+
+				&::before{
+					content: none;
+				}
+
+				@include pseudo-block( 'after', 'top', 0.125, false, 0, 0, 0 );
+
+			}
+
+		}
+
+		.rss-date{
+			display: block;
+			font-size: .6275rem;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			padding-bottom: 1rem;
+			padding-top: .25rem;
+			opacity: 0.65;
+
+			&::before{
+				content: "\e6b6";
+				font-family: 'themify';
+				display: inline-block;
+				margin-right: 0.5em;
+			}
+		}
+
+		cite{
+			font-style: normal;
+			opacity: 0.5;
+			margin-top: .5rem;
+			display: block;
+		}
+
+	}
+
+	&.widget_recent_comments{
+
+		.widget-title{
+
+			&::before{
+				content: "\e645";
+			}
+
+		}
+
+		.comment-author-link{
+			text-transform: capitalize;
+		}
+
+	}
+
+	&.widget_search{
+
+		.search-form{
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+
+			label{
+				flex-basis: 100%;
+			}
+
+			.search-field{
+				width: 100%;
+			}
+
+			.search-submit{
+				flex-grow: 0;
+				flex-shrink: 0;
+			}
+		}
+
+	}
+
+
+	&.xtd_recent_posts{
+
+		.widget-title{
+
+			&::before{
+				content: "\e64f";
+			}
+
+		}
+
+	}
+
+
+
+	&.widget_calendar{
+
+		.widget-title{
+
+			&::before{
+				content: "\e6b6";
+			}
+		}
+
+	}
+
+
+	&.widget_categories{
+
+		.widget-title{
+			padding-left: 4rem;
+
+			&::before{
+				content: "\e639";
+			}
+		}
+
+	}
+
+
+	&.widget_archive{
+
+		.widget-title{
+
+			&::before{
+				content: "\e6bf";
+			}
+		}
+
+	}
+
+	&.widget_recent_comments,
+	&.widget_archive,
+	&.widget_categories,
+	&.widget_calendar,
+	&.xtd_recent_posts{
+
+		.widget-title{
+			padding-left: 5rem;
+
+			&::before{
+				font-family: 'themify';
+				font-size: 1.25em;
+				display: block;
+				margin-right: 1rem;
+				width: 4rem;
+				text-align: center;
+				border-bottom: 1px solid;
+				padding-bottom: 1rem;
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+			}
+		}
+
+	}
+
+
+
+	.widget-title{
+		margin-bottom: 1.5rem;
+		font-size: 110%;
+		text-transform: uppercase;
+		position: relative;
+		padding-bottom: 1rem;
+
+		@include pseudo-block( 'after', 'top', 0.125, false, 0, 0, 0 );
+
+	}
+
+}

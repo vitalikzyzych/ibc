@@ -1,0 +1,34 @@
+.xtd-pricing-list-row{
+  margin-bottom: 2rem;
+
+  &__title{
+    width: 100%;
+    display: flex;
+    font-weight: 600;
+    //align-items: baseline;
+  }
+  &__spacer{
+    flex-grow: 1;
+    position: relative;
+    margin: 0 10px;
+
+    &::after{
+      content: '';
+      display: block;
+      border-bottom: 2px dotted currentColor;
+      opacity: 0.35;
+      position: absolute;
+      bottom: 0.45rem;
+      left: 0;
+      right: 0;
+    }
+  }
+  &__price{
+    align-self: flex-end;
+  }
+  &__description{
+    margin-top: .2rem;
+    font-size: .875rem;
+    opacity: 0.75;
+  }
+}

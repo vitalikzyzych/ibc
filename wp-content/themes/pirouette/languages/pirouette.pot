@@ -1,0 +1,1561 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Pirouette\n"
+"POT-Creation-Date: 2016-09-28 01:51+0300\n"
+"PO-Revision-Date: 2016-09-28 01:50+0300\n"
+"Last-Translator: Radu Cretu <ameriza@gmail.com>\n"
+"Language-Team: Radu Cretu <ameriza@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.9\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: comments.php:6
+#, php-format
+msgid "One comment for &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:15
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:16
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:17
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:22
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:30
+msgid "Leave Comment"
+msgstr ""
+
+#: comments.php:36
+msgid "Submit Comment"
+msgstr ""
+
+#: comments.php:38
+#, php-format
+msgid "You are logged in as %1$s. %2$sLog out &raquo;%3$s"
+msgstr ""
+
+#: comments.php:38
+msgid "Log Out"
+msgstr ""
+
+#: comments.php:40
+msgid "<b>Comment</b> ( * )"
+msgstr ""
+
+#: comments.php:41
+msgid "Comment"
+msgstr ""
+
+#: comments.php:48 comments.php:49
+msgid "Name"
+msgstr ""
+
+#: comments.php:52 comments.php:53
+msgid "Email"
+msgstr ""
+
+#: comments.php:58 comments.php:59
+msgid "Website"
+msgstr ""
+
+#: defaults/ips/ips.background.php:10
+msgid "Background"
+msgstr ""
+
+#: defaults/ips/ips.background.php:16 defaults/mods/mods.colors.php:14
+#: defaults/mods/mods.colors.php:195 defaults/mods/mods.colors.php:240
+msgid "Background Color"
+msgstr ""
+
+#: defaults/ips/ips.background.php:22
+msgid "Background Image"
+msgstr ""
+
+#: defaults/ips/ips.background.php:28
+msgid "Background Position"
+msgstr ""
+
+#: defaults/ips/ips.background.php:30 defaults/ips/ips.background.php:43
+#: defaults/ips/ips.background.php:57 defaults/ips/ips.background.php:70
+#: defaults/ips/ips.header.php:41 defaults/ips/ips.header.php:55
+#: defaults/ips/ips.header.php:68 defaults/ips/ips.header.php:81
+#: defaults/ips/ips.header.php:93 defaults/ips/ips.title.php:49
+#: defaults/ips/ips.title.php:63 defaults/ips/ips.title.php:77
+msgid "Inherit"
+msgstr ""
+
+#: defaults/ips/ips.background.php:31 defaults/ips/ips.header.php:56
+#: defaults/ips/ips.title.php:50 defaults/ips/ips.title.php:78
+#: defaults/mods/mods.header.php:47 defaults/mods/mods.header.php:148
+#: defaults/mods/mods.header.php:172
+msgid "Left"
+msgstr ""
+
+#: defaults/ips/ips.background.php:32 defaults/ips/ips.header.php:57
+#: defaults/ips/ips.header.php:70 defaults/ips/ips.title.php:51
+#: defaults/ips/ips.title.php:79 defaults/mods/mods.header.php:48
+#: defaults/mods/mods.header.php:62 defaults/mods/mods.header.php:149
+#: defaults/mods/mods.header.php:173
+msgid "Center"
+msgstr ""
+
+#: defaults/ips/ips.background.php:33 defaults/ips/ips.header.php:58
+#: defaults/ips/ips.title.php:52 defaults/ips/ips.title.php:80
+#: defaults/mods/mods.header.php:49 defaults/mods/mods.header.php:150
+#: defaults/mods/mods.header.php:174
+msgid "Right"
+msgstr ""
+
+#: defaults/ips/ips.background.php:41
+msgid "Background Repeat"
+msgstr ""
+
+#: defaults/ips/ips.background.php:44 defaults/ips/ips.header.php:42
+#: defaults/mods/mods.header.php:33
+msgid "Tile"
+msgstr ""
+
+#: defaults/ips/ips.background.php:45 defaults/ips/ips.header.php:43
+#: defaults/mods/mods.header.php:32
+msgid "No Repeat"
+msgstr ""
+
+#: defaults/ips/ips.background.php:46 defaults/ips/ips.header.php:44
+#: defaults/mods/mods.header.php:35
+msgid "Tile Vertically"
+msgstr ""
+
+#: defaults/ips/ips.background.php:47 defaults/ips/ips.header.php:45
+#: defaults/mods/mods.header.php:34
+msgid "Tile Horizontally"
+msgstr ""
+
+#: defaults/ips/ips.background.php:55
+msgid "Background Size"
+msgstr ""
+
+#: defaults/ips/ips.background.php:58 defaults/ips/ips.header.php:94
+#: defaults/mods/mods.header.php:88
+msgid "Auto"
+msgstr ""
+
+#: defaults/ips/ips.background.php:59 defaults/ips/ips.header.php:95
+#: defaults/mods/mods.header.php:89
+msgid "Cover"
+msgstr ""
+
+#: defaults/ips/ips.background.php:68
+msgid "Background Attachment"
+msgstr ""
+
+#: defaults/ips/ips.background.php:71 defaults/ips/ips.header.php:82
+#: defaults/mods/mods.header.php:75
+msgid "Scroll"
+msgstr ""
+
+#: defaults/ips/ips.background.php:72 defaults/ips/ips.header.php:83
+#: defaults/mods/mods.header.php:76
+msgid "Fixed"
+msgstr ""
+
+#: defaults/ips/ips.header.php:7 framework/class.helpers.php:337
+msgid "Inherit Global Slider"
+msgstr ""
+
+#: defaults/ips/ips.header.php:7
+msgid "Disable Header Slider"
+msgstr ""
+
+#: defaults/ips/ips.header.php:12 defaults/ips/ips.header.php:18
+msgid "Header Image"
+msgstr ""
+
+#: defaults/ips/ips.header.php:24 defaults/mods/mods.header.php:17
+msgid "Header Height"
+msgstr ""
+
+#: defaults/ips/ips.header.php:25
+#, php-format
+msgid ""
+"Set header height in vh (virtual height) units. For example, 30 vh will make "
+"your header stretch on 30% of the screen."
+msgstr ""
+
+#: defaults/ips/ips.header.php:39 defaults/mods/mods.header.php:26
+msgid "Image Repeat"
+msgstr ""
+
+#: defaults/ips/ips.header.php:53 defaults/mods/mods.header.php:41
+msgid "Image Alignment"
+msgstr ""
+
+#: defaults/ips/ips.header.php:66 defaults/mods/mods.header.php:55
+msgid "Image Position"
+msgstr ""
+
+#: defaults/ips/ips.header.php:69 defaults/ips/ips.title.php:64
+#: defaults/mods/mods.header.php:61 defaults/mods/mods.header.php:160
+msgid "Top"
+msgstr ""
+
+#: defaults/ips/ips.header.php:71 defaults/ips/ips.title.php:66
+#: defaults/mods/mods.header.php:63 defaults/mods/mods.header.php:162
+msgid "Bottom"
+msgstr ""
+
+#: defaults/ips/ips.header.php:79 defaults/mods/mods.header.php:69
+msgid "Image Attachment"
+msgstr ""
+
+#: defaults/ips/ips.header.php:91 defaults/mods/mods.header.php:82
+msgid "Image Size"
+msgstr ""
+
+#: defaults/ips/ips.header.php:106 defaults/ips/ips.header.php:112
+#: defaults/mods/mods.header.php:95 defaults/mods/mods.header.php:104
+msgid "Header Slider"
+msgstr ""
+
+#: defaults/ips/ips.title.php:10 defaults/mods/mods.colors.php:50
+#: defaults/mods/mods.header.php:114
+msgid "Page Heading"
+msgstr ""
+
+#: defaults/ips/ips.title.php:17
+msgid "Disable Page Title"
+msgstr ""
+
+#: defaults/ips/ips.title.php:18
+msgid "Check this to disable the page title."
+msgstr ""
+
+#: defaults/ips/ips.title.php:25
+msgid "Page Title"
+msgstr ""
+
+#: defaults/ips/ips.title.php:26
+msgid "Leave this empty to use the default title."
+msgstr ""
+
+#: defaults/ips/ips.title.php:33
+msgid "Page Subtitle"
+msgstr ""
+
+#: defaults/ips/ips.title.php:40
+msgid "Page Description"
+msgstr ""
+
+#: defaults/ips/ips.title.php:47
+msgid "Heading Aligment"
+msgstr ""
+
+#: defaults/ips/ips.title.php:61 defaults/mods/mods.header.php:154
+msgid "Heading Position"
+msgstr ""
+
+#: defaults/ips/ips.title.php:65 defaults/mods/mods.header.php:161
+msgid "Middle"
+msgstr ""
+
+#: defaults/ips/ips.title.php:75
+msgid "Heading Text Aligment"
+msgstr ""
+
+#: defaults/ips/ips.title.php:90 defaults/mods/mods.colors.php:57
+msgid "Page Heading Color"
+msgstr ""
+
+#: defaults/ips/ips.title.php:96 defaults/mods/mods.colors.php:66
+msgid "Page Subtitle Color"
+msgstr ""
+
+#: defaults/ips/ips.title.php:102 defaults/mods/mods.colors.php:75
+msgid "Page Heading Background Color"
+msgstr ""
+
+#: defaults/ips/ips.title.php:109
+msgid "Scroll Down Text"
+msgstr ""
+
+#: defaults/ips/ips.title.php:110
+msgid "Leave this empty to disale the scroll down text for this section."
+msgstr ""
+
+#: defaults/ips/ips.title.php:116
+msgid "Section Title"
+msgstr ""
+
+#: defaults/ips/ips.title.php:117
+msgid "Leave this empty to disale the section navigator for the hero section."
+msgstr ""
+
+#: defaults/ips/ips.title.php:123
+msgid "Section Color"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:8
+msgid "Colors"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:19
+msgid "This color is used as background color"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:23 defaults/mods/mods.colors.php:177
+#: defaults/mods/mods.colors.php:248
+msgid "Text Color"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:28
+msgid "This color is used for general text"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:32
+msgid "Primary Color"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:37
+msgid "This color is used for buttons, links and other visual elements"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:41 defaults/mods/mods.colors.php:256
+msgid "Links Color"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:46
+msgid "This color is used for text links"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:62
+msgid "This color is used for the page heading"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:71
+msgid "This color is used for the page subtitle & excerpt"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:80
+msgid "This color is used for the page heading background"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:84
+msgid "Headings"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:91
+msgid "H1 Heading Color"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:96
+msgid ""
+"This color is used for H1 text. Leave empty to inherit the links colors."
+msgstr ""
+
+#: defaults/mods/mods.colors.php:100
+msgid "H2 Heading Color"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:105
+msgid ""
+"This color is used for H2 text. Leave empty to inherit the links colors."
+msgstr ""
+
+#: defaults/mods/mods.colors.php:109
+msgid "H3 Heading Color"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:114
+msgid ""
+"This color is used for H3 text. Leave empty to inherit the links colors."
+msgstr ""
+
+#: defaults/mods/mods.colors.php:118
+msgid "H4 Heading Color"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:123
+msgid ""
+"This color is used for H4 text. Leave empty to inherit the links colors."
+msgstr ""
+
+#: defaults/mods/mods.colors.php:127
+msgid "H5 Heading Color"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:132
+msgid ""
+"This color is used for H5 text. Leave empty to inherit the links colors."
+msgstr ""
+
+#: defaults/mods/mods.colors.php:136
+msgid "H6 Heading Color"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:141
+msgid ""
+"This color is used for H6 text. Leave empty to inherit the links colors."
+msgstr ""
+
+#: defaults/mods/mods.colors.php:170
+msgid "Navigation"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:182
+msgid "This color is used for general text in the menu"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:186
+msgid "Active Color"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:191
+msgid "This color is used for the active menu element"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:200
+msgid "This color is used for menu background"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:233 defaults/mods/mods.footer.php:8
+msgid "Footer"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:245
+msgid "This color is used for footer background"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:253
+msgid "This color is used for general text in the footer"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:261
+msgid "This color is used for links in the footer"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:264
+msgid "Titles Color"
+msgstr ""
+
+#: defaults/mods/mods.colors.php:269
+msgid "This color is used for footer titles"
+msgstr ""
+
+#: defaults/mods/mods.defaults.php:36
+msgid "Global Colors"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:8
+msgid "Developer Tools"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:15
+msgid "Social Sharing"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:19
+msgid "Set up your sharing options in this section"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:22
+msgid "Sharing on single posts"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:27
+msgid ""
+"Check this in order to place sharing links at the bottom of each single blog "
+"post."
+msgstr ""
+
+#: defaults/mods/mods.developer.php:31
+msgid "Sharing on pages"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:36
+msgid "Check this in order to place sharing links at the bottom of each page."
+msgstr ""
+
+#: defaults/mods/mods.developer.php:40
+msgid "Sharing Tagline"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:44 framework/class.helpers.php:421
+msgid "Did you like this? Share it!"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:49
+msgid "Automatic Theme Update"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:53
+msgid ""
+"Type in your Theme Forest Username & API Key in order to get automatic theme "
+"updates. To generate an API key you need to login to your Theme Forest "
+"account, and go to Settings > API Keys. Enter a label (ex: theme update) and "
+"hit the Generate API Key button."
+msgstr ""
+
+#: defaults/mods/mods.developer.php:56
+msgid "Theme Forest Username"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:62
+msgid "Theme Forest API Key"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:68
+msgid "Google Services"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:74
+msgid "Google Tag Manager Container"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:80
+msgid "Analytics ID"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:86
+msgid "Webmaster Tools Verification"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:92
+msgid "Google Maps Api Key"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:98
+msgid "Custom HTML Code"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:102
+msgid ""
+"Using unsafe code in any of these code fields can lead to huge security "
+"vulnerabilities. [br]View our [Online Documentation](http://docs.curlythemes."
+"com/leisure-wordpress) for more."
+msgstr ""
+
+#: defaults/mods/mods.developer.php:105
+msgid "Show Custom Code Fields"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:108
+msgid ""
+"Please make sure you trust the code and that it will not compromise your "
+"website."
+msgstr ""
+
+#: defaults/mods/mods.developer.php:112
+msgid "Custom code before </head>"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:116 defaults/mods/mods.developer.php:125
+msgid ""
+"Please use valid HTML5 rules only. [br]Validate code here: [W3C HTML5 "
+"Validator](https://validator.w3.org/#validate_by_input)"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:121
+msgid "Custom code before </body>"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:130
+msgid "Custom CSS Code"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:134
+msgid ""
+"Please use valid CSS3 rules only. Validate code here: [W3C CSS3 Validator]"
+"(https://jigsaw.w3.org/css-validator/#validate_by_input)"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:137
+msgid "Custom CSS"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:138
+msgid "CSS will be applied sitewide"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:144
+msgid "Small Devices CSS"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:145
+msgid "Devices with display up to 768px wide"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:151
+msgid "Medium Devices CSS"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:152
+msgid "Devices with display up to 992px wide"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:158
+msgid "Large Devices CSS"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:159
+msgid "Devices with display up to 1200px wide"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:165
+msgid "Extra Large Devices CSS"
+msgstr ""
+
+#: defaults/mods/mods.developer.php:166
+msgid "Devices with a minimum display of 1200px wide"
+msgstr ""
+
+#: defaults/mods/mods.footer.php:15
+msgid "Footer Logo"
+msgstr ""
+
+#: defaults/mods/mods.footer.php:19
+msgid "This image will be used as the logo in the footer"
+msgstr ""
+
+#: defaults/mods/mods.footer.php:24
+msgid "Footer Retina Logo @2x"
+msgstr ""
+
+#: defaults/mods/mods.footer.php:28
+msgid "This image will be used as the retina logo in the footer"
+msgstr ""
+
+#: defaults/mods/mods.footer.php:34
+msgid "Back to top label"
+msgstr ""
+
+#: defaults/mods/mods.footer.php:38 template-parts/footer/scroll-top.php:1
+msgid "Back to top of the page"
+msgstr ""
+
+#: defaults/mods/mods.footer.php:39
+msgid "Leave empty to disable this button."
+msgstr ""
+
+#: defaults/mods/mods.header.php:7
+msgid "- Select Global Header -"
+msgstr ""
+
+#: defaults/mods/mods.header.php:10
+msgid "Header"
+msgstr ""
+
+#: defaults/mods/mods.header.php:22
+msgid "Choose your minimum header height"
+msgstr ""
+
+#: defaults/mods/mods.header.php:99
+msgid ""
+"When adding a header slider, you have to keep in mind that the header height "
+"will increase to match the height of the slider. Minimum slider height "
+"should be 370px; also, please note that this is a global setting."
+msgstr ""
+
+#: defaults/mods/mods.header.php:123
+msgid "Heading Top Margin"
+msgstr ""
+
+#: defaults/mods/mods.header.php:128
+msgid "Choose your heading top margin"
+msgstr ""
+
+#: defaults/mods/mods.header.php:132
+msgid "Heading Bottom Margin"
+msgstr ""
+
+#: defaults/mods/mods.header.php:137
+msgid "Choose your heading bottom margin"
+msgstr ""
+
+#: defaults/mods/mods.header.php:142
+msgid "Heading Alignment"
+msgstr ""
+
+#: defaults/mods/mods.header.php:166
+msgid "Heading Text Alignment"
+msgstr ""
+
+#: defaults/mods/mods.header.php:179
+msgid "Toolbar"
+msgstr ""
+
+#: defaults/mods/mods.header.php:187
+msgid "Toolbar Text"
+msgstr ""
+
+#: defaults/mods/mods.header.php:196
+msgid "Disable WPML Language Selector"
+msgstr ""
+
+#: defaults/mods/mods.header.php:201
+msgid ""
+"Check this in order to disable the WPML language selector from the toolbar"
+msgstr ""
+
+#: defaults/mods/mods.identity.php:8
+msgid "Logo"
+msgstr ""
+
+#: defaults/mods/mods.identity.php:12
+msgid "The logo will appear in your header."
+msgstr ""
+
+#: defaults/mods/mods.identity.php:15
+msgid "Retina Logo @2x"
+msgstr ""
+
+#: defaults/mods/mods.identity.php:19
+msgid "Your retina logo must be exactly 2X times bigger than your logo."
+msgstr ""
+
+#: defaults/mods/mods.layout.php:8
+msgid "Navigation Layout"
+msgstr ""
+
+#: defaults/mods/mods.layout.php:14
+msgid "Site Layout"
+msgstr ""
+
+#: defaults/mods/mods.layout.php:20
+msgid "Disable Full Width Layout"
+msgstr ""
+
+#: defaults/mods/mods.layout.php:24
+msgid "Checking this box will make your website layout boxed."
+msgstr ""
+
+#: defaults/mods/mods.layout.php:27
+msgid "Boxed Layout Width"
+msgstr ""
+
+#: defaults/mods/mods.layout.php:32
+msgid "Choose your exact box width"
+msgstr ""
+
+#: defaults/mods/mods.layout.php:37
+msgid "Disable Fixed Grid"
+msgstr ""
+
+#: defaults/mods/mods.layout.php:41
+msgid ""
+"Checking this box will make your website fluid and fill as much horizontal "
+"screen space as possible."
+msgstr ""
+
+#: defaults/mods/mods.layout.php:44
+msgid "Grid Width"
+msgstr ""
+
+#: defaults/mods/mods.layout.php:49
+msgid "Choose your exact content area width"
+msgstr ""
+
+#: defaults/mods/mods.navigation.php:8
+msgid "Navigation Position"
+msgstr ""
+
+#: defaults/mods/mods.navigation.php:14
+msgid "Left Aligned"
+msgstr ""
+
+#: defaults/mods/mods.navigation.php:15
+msgid "Right Aligned"
+msgstr ""
+
+#: defaults/mods/mods.navigation.php:17
+msgid "Choose your navigation alignment"
+msgstr ""
+
+#: defaults/mods/mods.navigation.php:20
+msgid "Navigation Top Margin"
+msgstr ""
+
+#: defaults/mods/mods.navigation.php:25 defaults/mods/mods.navigation.php:34
+msgid "Choose your exact menu top margin"
+msgstr ""
+
+#: defaults/mods/mods.navigation.php:29
+msgid "Navigation Bottom Margin"
+msgstr ""
+
+#: defaults/mods/mods.navigation.php:38
+msgid "Disable Sticky Menu"
+msgstr ""
+
+#: defaults/mods/mods.typography.php:8
+msgid "Typography"
+msgstr ""
+
+#: defaults/mods/mods.typography.php:14
+msgid "Global Typography"
+msgstr ""
+
+#: defaults/mods/mods.typography.php:20
+msgid "Main Font Family"
+msgstr ""
+
+#: defaults/mods/mods.typography.php:26
+msgid ""
+"This is the general font of your site. It is used for general text, "
+"headings, buttons and other text elements."
+msgstr ""
+
+#: defaults/mods/mods.typography.php:30
+msgid "Font Subset"
+msgstr ""
+
+#: defaults/mods/mods.typography.php:43
+msgid ""
+"Make sure the fonts you use on the website support these special characters."
+msgstr ""
+
+#: defaults/mods/mods.typography.php:46
+msgid "Web Font Loader"
+msgstr ""
+
+#: defaults/mods/mods.typography.php:50
+msgid ""
+"Check this to activate Web Font Loader. This will increase your page speed, "
+"but the fonts will be loaded after the other elements."
+msgstr ""
+
+#: defaults/mods/mods.typography.php:53
+msgid "Main Menu"
+msgstr ""
+
+#: defaults/mods/mods.typography.php:59
+msgid "Main Menu Font"
+msgstr ""
+
+#: defaults/mods/mods.typography.php:65
+msgid "This is the general font of your navigation."
+msgstr ""
+
+#: defaults/mods/mods.typography.php:69
+msgid "H1 Heading"
+msgstr ""
+
+#: defaults/mods/mods.typography.php:75
+msgid "H1 Headings Font"
+msgstr ""
+
+#: defaults/mods/mods.typography.php:81
+msgid "This is the general font of your H1 headings."
+msgstr ""
+
+#: defaults/mods/mods.typography.php:86
+msgid "H2 Heading"
+msgstr ""
+
+#: defaults/mods/mods.typography.php:92
+msgid "H2 Headings Font"
+msgstr ""
+
+#: defaults/mods/mods.typography.php:98
+msgid "This is the general font of your H2 headings."
+msgstr ""
+
+#: defaults/mods/mods.typography.php:103
+msgid "H3 Heading"
+msgstr ""
+
+#: defaults/mods/mods.typography.php:109
+msgid "H3 Headings Font"
+msgstr ""
+
+#: defaults/mods/mods.typography.php:115
+msgid "This is the general font of your H3 headings."
+msgstr ""
+
+#: defaults/mods/mods.typography.php:119
+msgid "H4 Heading"
+msgstr ""
+
+#: defaults/mods/mods.typography.php:125
+msgid "H4 Headings Font"
+msgstr ""
+
+#: defaults/mods/mods.typography.php:131
+msgid "This is the general font of your H4 headings."
+msgstr ""
+
+#: defaults/mods/mods.typography.php:135
+msgid "H5 Heading"
+msgstr ""
+
+#: defaults/mods/mods.typography.php:141
+msgid "H5 Headings Font"
+msgstr ""
+
+#: defaults/mods/mods.typography.php:147
+msgid "This is the general font of your H5 headings."
+msgstr ""
+
+#: defaults/mods/mods.typography.php:151
+msgid "H6 Heading"
+msgstr ""
+
+#: defaults/mods/mods.typography.php:157
+msgid "H6 Headings Font"
+msgstr ""
+
+#: defaults/mods/mods.typography.php:163
+msgid "This is the general font of your H6 headings."
+msgstr ""
+
+#: defaults/mods/mods.typography.php:167
+msgid "Blockquote"
+msgstr ""
+
+#: defaults/mods/mods.typography.php:173
+msgid "Blockquote Font"
+msgstr ""
+
+#: defaults/mods/mods.typography.php:179
+msgid "This is the general font of your blockquotes."
+msgstr ""
+
+#: framework/class.comments.php:56
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: framework/class.comments.php:66
+msgid "Edit Comment"
+msgstr ""
+
+#: framework/class.customizer.typo.php:80
+msgid "Font Family"
+msgstr ""
+
+#: framework/class.customizer.typo.php:89
+msgid "Default Font"
+msgstr ""
+
+#: framework/class.customizer.typo.php:104
+msgid "Font Variant"
+msgstr ""
+
+#: framework/class.customizer.typo.php:118
+msgid "Font Size"
+msgstr ""
+
+#: framework/class.customizer.typo.php:127
+msgid "Text Transform"
+msgstr ""
+
+#: framework/class.customizer.typo.php:130
+msgid "Normal"
+msgstr ""
+
+#: framework/class.customizer.typo.php:131
+msgid "Capitalize"
+msgstr ""
+
+#: framework/class.customizer.typo.php:132
+msgid "Uppercase"
+msgstr ""
+
+#: framework/class.customizer.typo.php:133
+msgid "Small Caps"
+msgstr ""
+
+#: framework/class.customizer.typo.php:142
+msgid "Letter Spacing"
+msgstr ""
+
+#: framework/class.heading.php:86
+msgid "Search Results"
+msgstr ""
+
+#: framework/class.heading.php:92
+msgid "Page could not be found. 404 Error"
+msgstr ""
+
+#: framework/class.helpers.php:174
+msgid "Menu"
+msgstr ""
+
+#: framework/class.plugins.php:121
+#: vendor/tgmpa/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#: framework/class.plugins.php:122
+#: vendor/tgmpa/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr ""
+
+#: framework/class.plugins.php:123
+#: vendor/tgmpa/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: framework/class.plugins.php:124
+#: vendor/tgmpa/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: framework/class.plugins.php:125
+#: vendor/tgmpa/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: framework/class.plugins.php:127
+#: vendor/tgmpa/class-tgm-plugin-activation.php:343
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/class.plugins.php:132
+#: vendor/tgmpa/class-tgm-plugin-activation.php:349
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/class.plugins.php:137
+#: vendor/tgmpa/class-tgm-plugin-activation.php:355
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/class.plugins.php:143
+#: vendor/tgmpa/class-tgm-plugin-activation.php:361
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/class.plugins.php:148
+#: vendor/tgmpa/class-tgm-plugin-activation.php:367
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/class.plugins.php:153
+#: vendor/tgmpa/class-tgm-plugin-activation.php:373
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/class.plugins.php:158
+#: vendor/tgmpa/class-tgm-plugin-activation.php:378
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/class.plugins.php:163
+#: vendor/tgmpa/class-tgm-plugin-activation.php:383
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/class.plugins.php:168
+#: vendor/tgmpa/class-tgm-plugin-activation.php:388
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/class.plugins.php:172
+#: vendor/tgmpa/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: framework/class.plugins.php:173
+#: vendor/tgmpa/class-tgm-plugin-activation.php:394
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3244
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: framework/class.plugins.php:174
+#: vendor/tgmpa/class-tgm-plugin-activation.php:395
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3037
+#, fuzzy
+msgid "The following plugin was activated successfully:"
+msgstr ""
+"#-#-#-#-#  1extracted.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  5extracted.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+
+#: framework/class.plugins.php:175
+#: vendor/tgmpa/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: framework/class.plugins.php:176
+#: vendor/tgmpa/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: framework/class.plugins.php:177
+#: vendor/tgmpa/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: framework/class.plugins.php:178
+#: vendor/tgmpa/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: framework/class.plugins.php:179
+#: vendor/tgmpa/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: framework/class.plugins.php:180
+#: vendor/tgmpa/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: framework/class.woo.php:13
+msgid "Shop Widgets Area"
+msgstr ""
+
+#: framework/theme-update/class-envato-protected-api.php:69
+#: framework/theme-update/class-envato-protected-api.php:106
+#: framework/theme-update/class-envato-protected-api.php:160
+msgid "Please enter your Envato Marketplace Username."
+msgstr ""
+
+#: framework/theme-update/class-envato-protected-api.php:73
+msgid "Please enter your Envato Marketplace API Key."
+msgstr ""
+
+#: framework/theme-update/class-envato-protected-api.php:98
+msgid "The API \"set\" is a required parameter."
+msgstr ""
+
+#: framework/theme-update/class-envato-protected-api.php:187
+msgid "The Envato Marketplace \"item ID\" is a required parameter."
+msgstr ""
+
+#: functions.php:40 template-parts/button-read-more.php:2
+msgid "Read More"
+msgstr ""
+
+#: functions.php:110
+msgid "Main Navigation"
+msgstr ""
+
+#: functions.php:111
+msgid "Footer Navigation"
+msgstr ""
+
+#: functions.php:119
+msgid "Blog Widgets Area"
+msgstr ""
+
+#: functions.php:129
+msgid "Pages Widget Area"
+msgstr ""
+
+#: functions.php:139
+msgid "Footer Widget Area"
+msgstr ""
+
+#: post-formats/content-missing.php:3
+msgid "Nothing Found"
+msgstr ""
+
+#: post-formats/content-missing.php:6
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/meta-loop.php:5
+msgid "No Comments"
+msgstr ""
+
+#: template-parts/meta-loop.php:5
+msgid "1 Comment"
+msgstr ""
+
+#: template-parts/meta-loop.php:5
+msgid "% Comments"
+msgstr ""
+
+#: template-parts/meta-loop.php:10
+#, php-format
+msgid ""
+"<span><i class=\"ti-calendar color-primary\"></i> <em>%1$s</em></"
+"span><span><i class=\"ti-comments color-primary\"></i> <em>%2$s</em></span>"
+msgstr ""
+
+#: template-parts/meta-loop.php:15
+#, php-format
+msgid "<span><i class=\"ti-calendar color-primary\"></i> <em>%1$s</em></span>"
+msgstr ""
+
+#: template-parts/meta-single.php:3
+msgid ", "
+msgstr ""
+
+#: template-parts/meta-single.php:4
+msgid "<span><i class=\"ti-tag color-primary\"></i> <em>"
+msgstr ""
+
+#: template-parts/pagination-links.php:1
+msgid "Pages:"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:393
+#: vendor/tgmpa/class-tgm-plugin-activation.php:912
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2618
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3665
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:1019
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:1019
+#: vendor/tgmpa/class-tgm-plugin-activation.php:1022
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:1022
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:1206
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3033
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2358
+msgid "Required"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2361
+msgid "Recommended"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2377
+msgid "WordPress Repository"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2380
+msgid "External Source"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2383
+msgid "Pre-Packaged"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2400
+msgid "Not Installed"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2404
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2406
+msgid "Active"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2412
+msgid "Required Update not Available"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2415
+msgid "Requires Update"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2418
+msgid "Update recommended"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2427
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2473
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2477
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2481
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2485
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2567
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2575
+msgid "Installed version:"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2583
+msgid "Minimum required version:"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2595
+msgid "Available version:"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2618
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2632
+msgid "Plugin"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2633
+msgid "Source"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2634
+msgid "Type"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2638
+msgid "Version"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2639
+msgid "Status"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2688
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2693
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2699
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2769
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2802
+msgid "Install"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2808
+msgid "Update"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2811
+msgid "Activate"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2842
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2844
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2885
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2887
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:2993
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3019
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3243
+msgid "Plugin activation failed."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3583
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3586
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3588
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3592
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3594
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3594
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3602
+msgid "Show Details"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3594
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3602
+msgid "Hide Details"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3595
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3597
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3600
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3602
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3603
+msgid "All installations have been completed."
+msgstr ""
+
+#: vendor/tgmpa/class-tgm-plugin-activation.php:3605
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Pirouette"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://demo.curlythemes.com/dance-wp/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Pirouette is a premium WordPress theme dedicated to dance studios, and dance "
+"related businesses."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Curly Themes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://demo.curlythemes.com/"
+msgstr ""

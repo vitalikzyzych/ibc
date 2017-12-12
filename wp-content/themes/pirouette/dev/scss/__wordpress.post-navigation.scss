@@ -1,0 +1,120 @@
+.post-navigation{
+	position: relative;
+	margin-top: 8rem;
+
+
+	&::before,
+	&::after{
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		left:0;
+		border-bottom: 1px solid currentcolor;
+		opacity: 0.125;
+	}
+	&::after{
+		top: auto;
+		bottom: 0;
+	}
+
+	.screen-reader-text{
+		display: none;
+	}
+
+	.nav-links{
+		display: flex;
+		position: relative;
+		font-size: .8rem;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		word-spacing: .25rem;
+		flex-direction: column;
+		width: 100%;
+
+		@include media-breakpoint-up(sm) {
+			flex-direction: row;
+			font-size: .625rem;
+			align-items: flex-start;
+
+			&::after{
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 50%;
+				border-left: 1px solid currentcolor;
+				opacity: 0.125;
+			}
+
+		}
+
+		div{
+			display: inline-block;
+			padding: 1rem 2.5rem;
+			position: relative;
+
+			@include media-breakpoint-up(sm) {
+				padding: 2rem 3rem 3rem;
+				flex-basis: 50%;
+			}
+
+			&::before{
+				content: "\e661";
+				font-family: 'themify';
+				display: inline-block;
+				position: absolute;
+				line-height: 1.6;
+			}
+
+			&.nav-next{
+				text-align: right;
+				align-self: flex-end;
+
+				&::before{
+					top: 1.15rem;
+					right: 0;
+
+					@include media-breakpoint-up(sm) {
+						top: 2rem;
+					}
+				}
+
+			}
+
+			&.nav-previous{
+				align-self: flex-start;
+
+				&::before{
+					content: "\e662";
+					top: 1.15rem;
+					left: 0;
+
+					@include media-breakpoint-up(sm) {
+						top: 2rem;
+					}
+				}
+
+			}
+
+		}
+
+		a{
+			display: block;
+			transition: opacity 80ms ease;
+
+			&:hover{
+				opacity: .75;
+				text-decoration: none;
+			}
+
+		}
+
+		.nav-previous + .nav-next{
+			align-self: auto;
+		}
+
+	}
+}
